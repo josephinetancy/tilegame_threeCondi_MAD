@@ -1,6 +1,6 @@
 //randomAssignment
 
-randomAssignment = 5;
+randomAssignment = 1;
 
 console.log(randomAssignment);
 
@@ -2624,7 +2624,7 @@ variables for plugins
 ///
 */
 
-let noOfTrials = 1; //so 60 in total
+let noOfTrials = 15; //so 60 in total
 
 ///fake participant's activation time for WL and LL trials, that far exceeds trial duration
 let partner_rtL = 20000; //for when partner "loses".
