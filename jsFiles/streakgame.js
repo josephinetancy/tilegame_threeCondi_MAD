@@ -1,6 +1,10 @@
 //randomAssignment
 
-const randomAssignment = Math.floor(Math.random() * 8) + 1; 
+randomAssignment = 5;
+
+console.log(randomAssignment);
+
+//const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
 
 /* 
@@ -231,6 +235,7 @@ let avatarResponse = '#2669ee';
 
                 `<div class='parent'>
                 <p> If you press your SPACE BAR fast enough, the inner ${textNew.shape1} will activate like this. </p>
+                <p> This is considered a "success."</p>
                 <div class="outer-container">
                      <div id="outer-shape" class="${textNew.shape1}">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
@@ -240,6 +245,7 @@ let avatarResponse = '#2669ee';
 
                 `<div class='parent'>
                 <p>If you're too slow, the inner ${textNew.shape1} will turn gray.</p> 
+                <p>This is considered a "miss."</p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}">
                 <div id="inner-shape" class="${textNew.shape1}" style="background-color: gray;"></div>
@@ -250,6 +256,7 @@ let avatarResponse = '#2669ee';
                 `<div class='parent'>
                 <p>Your partner's job is to activate the outer ${textNew.shape1}. </p> 
                 <p>If your partner presses their SPACE BAR in time, the outer ${textNew.shape1} will activate like this. </p>
+                <p>This is considered a "success."</p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color2};">
                 <div id="inner-shape" class="${textNew.shape1}"></div>
@@ -260,6 +267,7 @@ let avatarResponse = '#2669ee';
 
                 `<div class='parent'>
                 <p>If your partner does NOT press their SPACE BAR in time, the outer ${textNew.shape1} will turn gray like this. </p>
+                <p> This is considered a "miss." </p>
                 <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                 <div id="inner-shape" class="${textNew.shape1}"></div>
@@ -277,7 +285,7 @@ let avatarResponse = '#2669ee';
                 </div>`, 
 
                  `<div class='parent'>
-                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you activate the inner ${textNew.shape1} and </p> <p> (ii) whether your partner activates the outer ${textNew.shape1}. </p><p></p>
+                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you succeed or miss </p> <p> (ii) whether your partner succeeds or misses. </p><p></p>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
@@ -315,7 +323,11 @@ let avatarResponse = '#2669ee';
                 </div>
                 <b><p style="margin-top: 10px;"></p></b>
             </div>
-        </div>`
+        </div>`, 
+                        `<div class='parent'>
+        <p>Next, you'll learn how many points each outcome is worth.</p> 
+        <p> Remember: Every 5 points is worth 1 cent.</p> 
+        </div>` 
                 ],
 
                 part2Solo: [
@@ -341,6 +353,7 @@ let avatarResponse = '#2669ee';
 
                 `<div class='parent'>
                 <p> If you press your SPACE BAR fast enough, the inner ${textNew.shape1} will activate like this. </p>
+                <p> This is considered a "success." </p>
                 <div class="outer-container">
                      <div id="outer-shape" class="${textNew.shape1}">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
@@ -349,7 +362,8 @@ let avatarResponse = '#2669ee';
                 </div>`,
 
                 `<div class='parent'>
-                <p>If you're too slow, the inner ${textNew.shape1} will turn gray.</p> 
+                <p>If you're too slow, the inner ${textNew.shape1} will turn gray.</p>
+                <p> This is considered a "miss." </p> 
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}">
                 <div id="inner-shape" class="${textNew.shape1}" style="background-color: gray;"></div>
@@ -360,6 +374,7 @@ let avatarResponse = '#2669ee';
                 `<div class='parent'>
                 <p>Your partner's job is to activate the outer ${textNew.shape1}. </p> 
                 <p>If your partner presses their SPACE BAR in time, the outer ${textNew.shape1} will activate like this. </p>
+                <p> This is considered a "success." </p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color2};">
                 <div id="inner-shape" class="${textNew.shape1}"></div>
@@ -370,6 +385,7 @@ let avatarResponse = '#2669ee';
 
                 `<div class='parent'>
                 <p>If your partner does NOT press their SPACE BAR in time, the outer ${textNew.shape1} will turn gray like this. </p>
+                <p> This is considered a "miss." </p>
                 <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                 <div id="inner-shape" class="${textNew.shape1}"></div>
@@ -387,7 +403,7 @@ let avatarResponse = '#2669ee';
                 </div>`, 
 
                  `<div class='parent'>
-                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you activate the inner ${textNew.shape1} and </p> <p> (ii) whether your partner activates the outer ${textNew.shape1}. </p><p></p>
+                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you succeed or miss </p> <p> (ii) whether your partner succeeds or misses. </p><p></p>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
@@ -425,14 +441,155 @@ let avatarResponse = '#2669ee';
                 </div>
                 <b><p style="margin-top: 10px;"></p></b>
             </div>
-        </div>`
+        </div>`, 
+                        `<div class='parent'>
+        <p>Next, you'll learn how many points each outcome is worth.</p> 
+        <p> Remember: Every 5 points is worth 1 cent.</p> 
+        </div>` 
                 ],
+presoloPage: [`<div class='parent'>
+  <p>If you succeed, you'll get 7 points. <br>(Your partner's performance doesn't matter).</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+
+        <!-- Outcome 2 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+    </div>
+</div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 7 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +7
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+                 `<div class='parent'>
+                 <p>If you miss, you'll get 3 points.<br>(Your partner's performance doesn't matter).</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                        <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+            </div>
+
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                        <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>
+        </div>`,
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 3 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +3
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`],
 soloPage: [
     `<div class='specialOnly'>
-        <p>You'll earn points based on these rules. Remember that every 5 points is worth 1 cent. </p>
-        <p>Specifically, you'll get 7 points if you activate the inner ${textNew.shape1}. </p> 
-        <p>You'll get 3 points if you do not activate the inner ${textNew.shape1}. </p>
-        <p>Your outcome depends on your performance only. </p>
+    <p> To summarize, you and your partner will earn points based on these rules:</p>
+        <p>If you succeed, you'll get 7 points.</p> 
+        <p>If you miss, you'll get 3 points. </p>
+        <p>Your outcome depends on your performance only. Remember: Every 5 points is worth 1 cent. </p>
          <div id="shape-wrapper" style="display: flex; justify-content: center;">
         <div class="table-container" style="display: block; clear: both;">
             <table style="border-collapse: collapse; text-align: center;">
@@ -510,14 +667,150 @@ soloPage: [
           <div style="margin-top: 20px; margin-bottom: 50px; text-align: center; width: 100%; display: block; clear: both;">
        <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
 </div>`
-
 ],
+presoloPage2: [`<div class='parent'>
+  <p>If you succeed, you'll get 7 points. <br>(Your partner's performance doesn't matter).</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+
+        <!-- Outcome 2 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+    </div>
+</div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 7 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +7
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+                 `<div class='parent'>
+                 <p>If you miss, you'll get 3 points.<br>(Your partner's performance doesn't matter).</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                        <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+            </div>
+
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                        <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>
+        </div>`,
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 3 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +3
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`],
 soloPage2: [
      `<div class='specialOnly'>
-        <p>You'll earn points based on these rules. Remember that every 5 points is worth 1 cent. </p>
-        <p>Specifically, you'll get 7 points if you activate the inner ${textNew.shape2}. </p> 
-        <p>You'll get 3 points if you do not activate the inner ${textNew.shape2}. </p>
-        <p>Your outcome depends on your performance only. </p>
+    <p> To summarize, you and your partner will earn points based on these rules:</p>
+        <p>If you succeed, you'll get 7 points.</p> 
+        <p>If you miss, you'll get 3 points. </p>
+        <p>Your outcome depends on your performance only. Remember: Every 5 points is worth 1 cent. </p>
          <div id="shape-wrapper" style="display: flex; justify-content: center;">
         <div class="table-container" style="display: block; clear: both;">
             <table style="border-collapse: collapse; text-align: center;">
@@ -595,15 +888,543 @@ soloPage2: [
           <div style="margin-top: 20px; margin-bottom: 50px; text-align: center; width: 100%; display: block; clear: both;">
        <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
 </div>`
+],
+pregroupPage33: [ 
+`<div class='parent'>
+   <p>If both you and your partner succeed, you'll get 8 points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 8 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +8
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+`<div class='parent'>
+  <p>If either you or your partner miss, you'll get 4 points.</p>
+
+  <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+    
+    <!-- Outcome 1 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+          <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+    <!-- Outcome 2 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+          <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+    <!-- Outcome 3 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+          <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+  </div>
+</div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 4 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +4
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`],
+pregroupPage332: [ 
+`<div class='parent'>
+   <p>If both you and your partner succeed, you'll get 8 points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 8 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +8
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+`<div class='parent'>
+  <p>If either you or your partner miss, you'll get 4 points.</p>
+
+  <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+    
+    <!-- Outcome 1 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+          <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+    <!-- Outcome 2 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+          <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+    <!-- Outcome 3 -->
+    <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div class="outer-container">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+          <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+        </div>
+      </div>
+      <b><p style="margin-top: 10px;"></p></b>
+    </div>
+
+  </div>
+</div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 4 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +4
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`],
+pregroupPage: [
+  `<div class='parent'>
+  <p>If both you and your partner succeed, you'll get 8 points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 8 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +8
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+`<div class='parent'>
+  <p>If you succeed and your partner misses, you'll get ${textNew.WL} points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.WL} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.WL}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+                 `<div class='parent'>
+                 <p>If you miss and your partner succeeds, you'll get ${textNew.LW} points.</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                        <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.LW} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.LW}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+
+                 `<div class='parent'>
+                 <p>If both you and your partner miss, you'll get ${textNew.LL} points.</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                        <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.LL} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.LL}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`, 
 ],
 groupPage: [
    `<div class='specialOnly'>
-        <p>You'll earn points based on these rules. Remember that every 5 points is worth 1 cent. </p>
-        <p>Specifically, you'll get 8 points if you and your partner activate the ${textNew.shape1}s. </p> 
-        <p> You'll get ${textNew.WL} points if you activate the inner ${textNew.shape1} and your partner does not activate the outer ${textNew.shape1}. </p> 
-        <p> You'll get ${textNew.LW} points if you do not activate the inner ${textNew.shape1} and your partner activates the outer ${textNew.shape1}. </p>
-       <p>You'll get ${textNew.LL} points if you and your partner do not activate the ${textNew.shape1}s. </p> 
-        <p>Your outcome depends on you and your partner's performance. </p>
+        <p>To summarize, you and your partner will earn points based on these rules: </p>
+        <p>If both you and your partner succeed, you'll get 8 points.</p> 
+        <p>If you succeed and your partner misses, you'll get ${textNew.WL} points.</p>
+        <p>If you miss and your partner succeeds, you'll get ${textNew.LW} points.</p>
+        <p>If both you and your partner miss, you'll get ${textNew.LL} points.</p> 
+  <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
+
           <div id="shape-wrapper" style="display: flex; justify-content: center;">
         <div class="table-container" style="display: block; clear: both;">
             <table style="border-collapse: collapse; text-align: center;">
@@ -682,14 +1503,421 @@ groupPage: [
        <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
 </div>`
 ],
+pregroupPage2: [
+  `<div class='parent'>
+  <p>If both you and your partner succeed, you'll get 8 points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn 8 points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +8
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+`<div class='parent'>
+  <p>If you succeed and your partner misses, you'll get ${textNew.WL2} points.</p> 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>
+        </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.WL2} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.WL2}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+                 `<div class='parent'>
+                 <p>If you miss and your partner succeeds, you'll get ${textNew.LW2} points.</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                        <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.LW2} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.LW2}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`,
+
+
+                 `<div class='parent'>
+                 <p>If both you and your partner miss, you'll get ${textNew.LL2} points.</p> 
+                <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+            <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="outer-container">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                        <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
+                    </div>
+                </div>
+                <b><p style="margin-top: 10px;"></p></b>
+                </div>
+            </div>`,
+
+`<div class="parent" style="text-align: center;">
+  <p>If you earn ${textNew.LL2} points, you'll see this:</p>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <div style="
+      font-size: 150px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: {{avatarResponse}};
+      text-align: center;
+      line-height: 1;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    ">
+      +${textNew.LL2}
+    </div>
+
+    <div style="
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-stroke: 2px black;
+      color: red;
+      text-align: center;
+      line-height: 1;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+    ">
+      placeholder
+    </div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  ">
+    Get ready for the next tile!
+  </div>
+</div>`], 
+groupPage33: [
+   `<div class='specialOnly'>
+        <p>To summarize, you and your partner will earn points based on these rules: </p>
+        <p>If both you and your partner succeed, you'll get 8 points.</p> 
+        <p>If either you or your partner miss, you'll get 4 points.</p>  
+  <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
+
+          <div id="shape-wrapper" style="display: flex; justify-content: center;">
+        <div class="table-container" style="display: block; clear: both;">
+            <table style="border-collapse: collapse; text-align: center;">
+                <!-- First row: Empty first column, Shapes start from the second column -->
+                <tr>
+                    <td style="padding: 10px;"></td> <!-- Empty first column -->
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Second row: Points with avatar 3 -->
+                <tr>
+                    <td rowspan="1" style="padding: 2px; vertical-align: middle;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="{{avatar1}}" style="width: 80px; height: auto;">
+                            <span style="font-size: 12px; font-weight: bold;">(you)</span>
+                        </div>
+                    </td>
+                    <td><b>+8</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                </tr>
+
+                <!-- Third row: Points with avatar 4 -->
+                <tr>
+                    <td rowspan="1" style="padding: 2px; vertical-align: middle; text-align: left;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="./avatar/4.jpg" style="width: 80px; height: auto;">
+                            <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
+                        </div>
+                    </td>
+                    <td><b>+8</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+          <div style="margin-top: 20px; margin-bottom: 50px; text-align: center; width: 100%; display: block; clear: both;">
+       <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
+</div>`],
+groupPage332: [
+   `<div class='specialOnly'>
+        <p>To summarize, you and your partner will earn points based on these rules: </p>
+        <p>If both you and your partner succeed, you'll get 8 points.</p> 
+        <p>If either you or your partner miss, you'll get 4 points.</p>  
+  <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
+
+          <div id="shape-wrapper" style="display: flex; justify-content: center;">
+        <div class="table-container" style="display: block; clear: both;">
+            <table style="border-collapse: collapse; text-align: center;">
+                <!-- First row: Empty first column, Shapes start from the second column -->
+                <tr>
+                    <td style="padding: 10px;"></td> <!-- Empty first column -->
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Second row: Points with avatar 3 -->
+                <tr>
+                    <td rowspan="1" style="padding: 2px; vertical-align: middle;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="{{avatar1}}" style="width: 80px; height: auto;">
+                            <span style="font-size: 12px; font-weight: bold;">(you)</span>
+                        </div>
+                    </td>
+                    <td><b>+8</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                </tr>
+
+                <!-- Third row: Points with avatar 4 -->
+                <tr>
+                    <td rowspan="1" style="padding: 2px; vertical-align: middle; text-align: left;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="./avatar/4.jpg" style="width: 80px; height: auto;">
+                            <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
+                        </div>
+                    </td>
+                    <td><b>+8</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                    <td><b>+4</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+          <div style="margin-top: 20px; margin-bottom: 50px; text-align: center; width: 100%; display: block; clear: both;">
+       <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
+</div>`],
 groupPage2: [
    `<div class='specialOnly'>
-        <p>You'll earn points based on these rules. Remember that every 5 points is worth 1 cent. </p>
-        <p>Specifically, you'll get 8 points if you and your partner activate the ${textNew.shape2}s. </p> 
-        <p> You'll get ${textNew.WL2} points if you activate the inner ${textNew.shape2} and your partner does not activate the outer ${textNew.shape2}. </p> 
-        <p> You'll get ${textNew.LW2} points if you do not activate the inner ${textNew.shape2} and your partner activates the outer ${textNew.shape2}. </p>
-       <p>You'll get ${textNew.LL2} points if you and your partner do not activate the ${textNew.shape2}s. </p> 
-        <p>Your outcome depends on you and your partner's performance. </p>
+        <p>To summarize, you and your partner will earn points based on these rules: </p>
+        <p>If both you and your partner succeed, you'll get 8 points.</p> 
+        <p>If you succeed and your partner misses, you'll get ${textNew.WL2} points.</p>
+        <p>If you miss and your partner succeeds, you'll get ${textNew.LW2} points.</p>
+        <p>If both you and your partner miss, you'll get ${textNew.LL2} points.</p> 
+  <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
+
           <div id="shape-wrapper" style="display: flex; justify-content: center;">
         <div class="table-container" style="display: block; clear: both;">
             <table style="border-collapse: collapse; text-align: center;">
@@ -767,7 +1995,7 @@ groupPage2: [
           <div style="margin-top: 20px; margin-bottom: 50px; text-align: center; width: 100%; display: block; clear: both;">
        <p style="font-size: 18px; font-weight: bold;">Please take a moment to memorize these rules.</p>
 </div>`
-    ]
+]
     }, 
  r2: {
     part1a: [`<div class='parent'>
@@ -799,6 +2027,7 @@ groupPage2: [
 
                 `<div class='parent'>
                 <p> If you press your SPACE BAR fast enough, the inner ${textNew.shape2} will activate like this. </p>
+                <p> This is considered a "success." </p>
                 <div class="outer-container">
                      <div id="outer-shape" class="${textNew.shape2}">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
@@ -807,7 +2036,8 @@ groupPage2: [
                 </div>`,
 
                 `<div class='parent'>
-                <p>If you're too slow, the inner ${textNew.shape2} will turn gray.</p> 
+                <p>If you're too slow, the inner ${textNew.shape2} will turn gray.</p>
+                <p> This is considered a "miss." </p> 
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}">
                 <div id="inner-shape" class="${textNew.shape2}" style="background-color: gray;"></div>
@@ -818,6 +2048,7 @@ groupPage2: [
                 `<div class='parent'>
                 <p>Your partner's job is to activate the outer ${textNew.shape2}. </p> 
                 <p>If your partner presses their SPACE BAR in time, the outer ${textNew.shape2} will activate like this. </p>
+                <p> This is considered a "success." </p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color2};">
                 <div id="inner-shape" class="${textNew.shape2}"></div>
@@ -828,6 +2059,7 @@ groupPage2: [
 
                 `<div class='parent'>
                 <p>If your partner does NOT press their SPACE BAR in time, the outer ${textNew.shape2} will turn gray like this. </p>
+                <p> This is considered a "miss." </p>
                 <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                 <div id="inner-shape" class="${textNew.shape2}"></div>
@@ -845,7 +2077,7 @@ groupPage2: [
                 </div>`, 
 
                  `<div class='parent'>
-                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you activate the inner ${textNew.shape2} and </p> <p> (ii) whether your partner activates the outer ${textNew.shape2}. </p><p></p>
+                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you succeed or miss </p> <p> (ii) whether your partner succeeds or misses.</p><p></p>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
@@ -883,7 +2115,11 @@ groupPage2: [
                 </div>
                 <b><p style="margin-top: 10px;"></p></b>
             </div>
-        </div>`
+        </div>`, 
+                        `<div class='parent'>
+        <p>Next, you'll learn how many points each outcome is worth.</p> 
+        <p> Remember: Every 5 points is worth 1 cent.</p> 
+        </div>` 
                 ],
 
     part2Solo: [
@@ -909,6 +2145,7 @@ groupPage2: [
 
                 `<div class='parent'>
                 <p> If you press your SPACE BAR fast enough, the inner ${textNew.shape2} will activate like this. </p>
+                <p> This is considered a "success." </p>
                 <div class="outer-container">
                      <div id="outer-shape" class="${textNew.shape2}">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
@@ -918,6 +2155,7 @@ groupPage2: [
 
                 `<div class='parent'>
                 <p>If you're too slow, the inner ${textNew.shape2} will turn gray.</p> 
+                <p> This is considered a "miss." </p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}">
                 <div id="inner-shape" class="${textNew.shape2}" style="background-color: gray;"></div>
@@ -928,6 +2166,7 @@ groupPage2: [
                 `<div class='parent'>
                 <p>Your partner's job is to activate the outer ${textNew.shape2}. </p> 
                 <p>If your partner presses their SPACE BAR in time, the outer ${textNew.shape2} will activate like this. </p>
+                <p> This is considered a "success." </p>
                <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color2};">
                 <div id="inner-shape" class="${textNew.shape2}"></div>
@@ -938,6 +2177,7 @@ groupPage2: [
 
                 `<div class='parent'>
                 <p>If your partner does NOT press their SPACE BAR in time, the outer ${textNew.shape2} will turn gray like this. </p>
+                <p> This is considered a "miss." </p>
                 <div class="outer-container">
                 <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                 <div id="inner-shape" class="${textNew.shape2}"></div>
@@ -955,7 +2195,7 @@ groupPage2: [
                 </div>`, 
 
                  `<div class='parent'>
-                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you activate the inner ${textNew.shape2} and </p> <p> (ii) whether your partner activates the outer ${textNew.shape2}. </p><p></p>
+                <p> You'll see one of four possible outcomes depending on: </p> <p> (i) whether you succeed or miss </p> <p> (ii) whether your partner succeeds or misses. </p><p></p>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
@@ -993,7 +2233,11 @@ groupPage2: [
                 </div>
                 <b><p style="margin-top: 10px;"></p></b>
             </div>
-        </div>`
+        </div>`, 
+                        `<div class='parent'>
+        <p>Next, you'll learn how many points each outcome is worth.</p> 
+        <p> Remember: Every 5 points is worth 1 cent.</p> 
+        </div>` 
                 ],
         }
     };
@@ -1063,21 +2307,26 @@ attnChk4: !isSecondTime
     let selectedAvatarImg = selectedAvatar ? selectedAvatar.img : null;
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
 
-    let attnChkDiv = isSecondTime 
-                ? (randomAssignment % 2 === 1 ? `attnChkGrp` : `attnChkNow`)
-                : (randomAssignment % 2 === 1 ? `attnChkNow` : `attnChkGrp`);
-    let sologroupPages = isSecondTime 
-                ? (randomAssignment % 2 === 1 ? pages.r1.groupPage2 : pages.r1.soloPage2)
-                : (randomAssignment % 2 === 1 ? pages.r1.soloPage : pages.r1.groupPage);
-
-
+      let sologroupPages = 
+    !isSecondTime && [1, 3, 5, 7].includes(randomAssignment) ? pages.r1.soloPage :
+    isSecondTime && [1, 5].includes(randomAssignment)        ? pages.r1.groupPage332 :
+    isSecondTime && [3, 7].includes(randomAssignment)        ? pages.r1.groupPage2 :
+    !isSecondTime && [2, 6].includes(randomAssignment)       ? pages.r1.groupPage33 :
+    !isSecondTime && [4, 8].includes(randomAssignment)       ? pages.r1.groupPage :
+    isSecondTime && [2, 4, 6, 8].includes(randomAssignment)  ? pages.r1.soloPage2 :
+    null; // fallback in case of unexpected input
+let attnChkDiv = 
+  sologroupPages === pages.r1.groupPage332 || sologroupPages === pages.r1.groupPage33
+    ? 'attnChkGrpSpecial'
+    : [pages.r1.groupPage, pages.r1.groupPage2].includes(sologroupPages)
+      ? 'attnChkGrp'
+      : 'attnChkNow';
+      
        let preambleText = `
-        <div class='${attnChkDiv}'> 
-            <p> To recap, in the ${isSecondTime ? textNew.game2 : textNew.game1}: </p>
-            <p> You activate the inner ${isSecondTime ? textNew.shape2 : textNew.shape1} with your SPACE BAR. </p>
-            ${sologroupPages === pages.r1.groupPage2 || sologroupPages === pages.r1.groupPage
-                ? `<p> Your partner activates the outer ${isSecondTime ? textNew.shape2 : textNew.shape1}. </p>` 
-                : `<p> Your partner activates the outer ${isSecondTime ? textNew.shape2 : textNew.shape1}. </p>`}
+        <div class='${attnChkDiv}'>
+        <p> To recap, in the ${isSecondTime ? textNew.game2 : textNew.game1}: </p>
+        <p> You activate the inner ${isSecondTime ? textNew.shape2 : textNew.shape1} with your SPACE BAR. </p>
+        <p> Your partner activates the outer ${isSecondTime ? textNew.shape2 : textNew.shape1}.</p>
 
     `;
 
@@ -1107,22 +2356,22 @@ attnChk4: !isSecondTime
             options: [`My earnings depend on my performance only.`,`My earnings depend on both my performance and my partner's performance.`],
         },
         {
-            prompt: `How many points do you get when you and your partner activate the ${isSecondTime ? textNew.shape2 : textNew.shape1}s?`,
+            prompt: `How many points do you get when both you and your partner succeed?`,
             name: `attnChk1`, 
             options: ['+2', '+3', '+4', '+6', '+7','+8'],
         },
         {
-            prompt: `How many points do you get when you activate your ${isSecondTime ? textNew.shape2 : textNew.shape1} but your partner does not activate their ${isSecondTime ? textNew.shape2 : textNew.shape1}?`, 
+            prompt: `How many points do you get when you succeed but your partner misses?`, 
             name: `attnChk2`, 
             options: ['+2', '+3', '+4', '+6', '+7','+8'],
         },
         {
-            prompt: `How many points do you get when you do not activate your ${isSecondTime ? textNew.shape2 : textNew.shape1} but your partner activates their ${isSecondTime ? textNew.shape2 : textNew.shape1}?`, 
+            prompt: `How many points do you get when you miss but your partner succeeds?`, 
             name: `attnChk3`, 
             options: ['+2', '+3', '+4', '+6', '+7','+8'],
         },
         {
-            prompt: `How many points do you get when you and your partner do not activate the ${isSecondTime ? textNew.shape2 : textNew.shape1}s?`, 
+            prompt: `How many points do you get when both you and your partner miss?`, 
             name: `attnChk4`, 
             options: ['+2', '+3', '+4', '+6', '+7','+8'],
         },
@@ -1306,10 +2555,24 @@ function makeR1SoloHigh() {
             let selectedAvatar = avatarChoices.find(avatar => avatar.code === avatarResponse);
             let selectedAvatarImg = selectedAvatar ? selectedAvatar.img : null;
 
-           const sologroupPages = isSecondTime 
-                ? (randomAssignment % 2 === 1 ? pages.r1.groupPage2 : pages.r1.soloPage2)
-                : (randomAssignment % 2 === 1 ? pages.r1.soloPage : pages.r1.groupPage);
+            let sologroupPages;
 
+            if ([1, 3, 5, 7].includes(randomAssignment) && !isSecondTime) {
+                sologroupPages = [...pages.r1.presoloPage, ...pages.r1.soloPage];
+            } else if ([1, 5].includes(randomAssignment) && isSecondTime) {
+                sologroupPages = [...pages.r1.pregroupPage332, ...pages.r1.groupPage332];
+            } else if ([3, 7].includes(randomAssignment) && isSecondTime) {
+                sologroupPages = [...pages.r1.pregroupPage2, ...pages.r1.groupPage2];
+            } else if ([2, 6].includes(randomAssignment) && !isSecondTime) {
+                sologroupPages = [...pages.r1.pregroupPage33, ...pages.r1.groupPage33];
+            } else if ([4, 8].includes(randomAssignment) && !isSecondTime) {
+                sologroupPages =  [...pages.r1.pregroupPage, ...pages.r1.groupPage];
+            } else if ([2, 4, 6, 8].includes(randomAssignment) && isSecondTime) {
+                sologroupPages = [...pages.r1.presoloPage2, ...pages.r1.soloPage2];
+            } else {
+                console.warn("Unhandled RA/isSecondTime combination:", randomAssignment, isSecondTime);
+                sologroupPages = []; // Fallback
+            }
 
             const updatedPages = sologroupPages.map(page => {
                 return page
@@ -1361,7 +2624,7 @@ variables for plugins
 ///
 */
 
-let noOfTrials = 15; //so 60 in total
+let noOfTrials = 1; //so 60 in total
 
 ///fake participant's activation time for WL and LL trials, that far exceeds trial duration
 let partner_rtL = 20000; //for when partner "loses".
@@ -1683,6 +2946,7 @@ function generateAvatarFeedbackLast(avatar1, avatar1Text, avatar2Text, color) {
 
 */
 
+/*
 function generateSoloAvatarFeedback(avatar1, avatar1Text, avatar1TotalPoints, color) {
     return `
         <div style="display: flex; flex-direction: column; align-items: center;">
@@ -1696,8 +2960,40 @@ function generateSoloAvatarFeedback(avatar1, avatar1Text, avatar1TotalPoints, co
             Get ready for the next tile!
         </div>
     `;
-}
+} */
 
+
+function generateSoloAvatarFeedback(avatar1, avatar1Text, avatar1TotalPoints, color, deductionAmount = 0) {
+    const textStyleBase = `
+        font-size: 150px;
+        font-weight: bold;
+        -webkit-text-stroke: 2px black;
+        text-align: center;
+        line-height: 1;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    `;
+
+    const displayText = `<div style="${textStyleBase} color: ${color}; margin-bottom: 50px;">+${avatar1Text}</div>`;
+
+    const deductionText = deductionAmount > 0
+        ? `<div style="${textStyleBase} color: red;">-${deductionAmount} loss</div>`
+        : `<div style="${textStyleBase} visibility: hidden;">placeholder</div>`; // Keeps spacing equal
+
+    return `
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+            ${displayText}
+        </div>
+
+        <!-- Line at the bottom -->
+        <div style="text-align: center; margin-top: 30px; font-size: 24px; font-weight: bold;">
+            Get ready for the next tile!
+        </div>
+    `;
+}
+/*
 function generateSoloAvatarFeedbackLast(avatar1, avatar1Text, avatar1TotalPoints, color) {
     return `
         <div style="display: flex; flex-direction: column; align-items: center;">
@@ -1712,8 +3008,40 @@ function generateSoloAvatarFeedbackLast(avatar1, avatar1Text, avatar1TotalPoints
         </div>
     `;
 } 
+*/
 
 
+
+function generateSoloAvatarFeedbackLast(avatar1, avatar1Text, avatar1TotalPoints, color, deductionAmount = 0) {
+    const textStyleBase = `
+        font-size: 150px;
+        font-weight: bold;
+        -webkit-text-stroke: 2px black;
+        text-align: center;
+        line-height: 1;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    `;
+
+    const displayText = `<div style="${textStyleBase} color: ${color}; margin-bottom: 50px;">+${avatar1Text}</div>`;
+
+    const deductionText = deductionAmount > 0
+        ? `<div style="${textStyleBase} color: red;">-${deductionAmount} loss</div>`
+        : `<div style="${textStyleBase} visibility: hidden;">placeholder</div>`; // Keeps spacing equal
+
+    return `
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+            ${displayText}
+        </div>
+
+        <!-- Line at the bottom -->
+        <div style="text-align: center; margin-top: 30px; font-size: 24px; font-weight: bold;">
+            The game is now complete!
+        </div>
+    `;
+}
 const avatarChoices = [
     { color: 'Pink', code: '#ff00fe', img: './avatar/1.jpg' },
     { color: 'Green', code: '#90CD4C', img: './avatar/2.jpg' },
@@ -2360,18 +3688,17 @@ p.task.GroupCircleLow = {
 
     p.Qs = {};
 
-    const FlowScale0 = ['0<br>Not at all immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More immersed than I've ever felt`];
-    const FlowScale1 = ['0<br>Not at all engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engaged than I've ever felt`];
-    const FlowScale2 = ['0<br>Not at all engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engrossed than I've ever felt`];
-    const FlowScale3 = ['0<br>Not at all absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More absorbed than I've ever felt`];
-    const FlowScale4 = ['0<br>Not at all bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More bored than I've ever felt`];
+    const FlowScale0 = ['0<br>A little immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite immersed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More immersed than I've ever felt`];
+    const FlowScale1 = ['0<br>A little engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite engaged', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engaged than I've ever felt`];
+    const FlowScale2 = ['0<br>A little engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite engrossed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engrossed than I've ever felt`];
+    const FlowScale3 = ['0<br>A little absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite absorbed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More absorbed than I've ever felt`];
+    const FlowScale4 = ['0<br>A little bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite bored', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More bored than I've ever felt`];
 
     const EnjoyScale0 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've enjoyed anything`];
     const EnjoyScale1 = ['0<br>Zero fun', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More fun than I've ever had`];
     const EnjoyScale2 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More entertained than I've ever felt`];
-    const EnjoyScale3 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More I've ever liked anything`];
-    const EnjoyScale4 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More I've ever disliked anything`];
-
+    const EnjoyScale3 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've ever liked anything`];
+    const EnjoyScale4 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've ever disliked anything`];
 
     
 p.flowMeasure = {

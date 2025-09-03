@@ -255,6 +255,13 @@
  /* height: auto; */
 }
 
+.attnChkGrpSpecial {
+  position: relative;
+  width: 950px;
+ height: 720px; 
+ /* height: auto; */
+}
+
 .attnChkGrp {
   position: relative;
   width: 950px;
