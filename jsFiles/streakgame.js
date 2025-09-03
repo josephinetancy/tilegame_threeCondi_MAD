@@ -1,6 +1,6 @@
 //randomAssignment
 
-randomAssignment = 1;
+randomAssignment = 6;
 
 console.log(randomAssignment);
 
