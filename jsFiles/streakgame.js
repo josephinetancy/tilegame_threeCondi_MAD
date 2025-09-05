@@ -2624,7 +2624,7 @@ variables for plugins
 ///
 */
 
-let noOfTrials = 15; //so 60 in total
+let noOfTrials = 12; //so 60 in total
 
 ///fake participant's activation time for WL and LL trials, that far exceeds trial duration
 let partner_rtL = 20000; //for when partner "loses".
@@ -3115,7 +3115,7 @@ function MakeFeedback(mode) {
             avatar1TotalPoints += pointsAddedAvatar1;
             avatar2TotalPoints += pointsAddedAvatar2;
 
-            if (trialNumber === 60 || trialNumber === 120) { //should be 60 and 120
+            if (trialNumber === 48 || trialNumber === 96) { //changed to 48 trials 
                 feedbackText = generateSoloAvatarFeedbackLast(
                     selectedAvatarImg,
                     +pointsAddedAvatar1,
@@ -3872,7 +3872,7 @@ const html = {
     p.save_data = {
         type: jsPsychPipe,
         action: "save",
-        experiment_id: "1Ox8qQj46J1O",
+        experiment_id: "Kgi4y5Cw6ji1",
         filename: filename,
         data_string: ()=>jsPsych.data.get().csv()
     }; 
