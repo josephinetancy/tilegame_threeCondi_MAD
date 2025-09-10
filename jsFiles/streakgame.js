@@ -1,11 +1,8 @@
 //randomAssignment
 
-randomAssignment = 6;
+const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
 console.log(randomAssignment);
-
-//const randomAssignment = Math.floor(Math.random() * 8) + 1; 
-
 
 /* 
 
