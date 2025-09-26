@@ -2318,7 +2318,7 @@ let attnChkDiv =
     : [pages.r1.groupPage, pages.r1.groupPage2].includes(sologroupPages)
       ? 'attnChkGrp'
       : 'attnChkNow';
-      
+      /*
        let preambleText = `
         <div class='${attnChkDiv}'>
         <p> To recap, in the ${isSecondTime ? textNew.game2 : textNew.game1}: </p>
@@ -2326,7 +2326,7 @@ let attnChkDiv =
         <p> Your partner activates the outer ${isSecondTime ? textNew.shape2 : textNew.shape1}.</p>
 
     `;
-
+*/
     // Replace placeholders in sologroupPages
     const updatedPages = sologroupPages.map(page => 
         page
@@ -2337,7 +2337,8 @@ let attnChkDiv =
     ).join(""); // Join all the updated HTML sections into a single string
 
     // Append the updated pages inside a new div to ensure layout stacking
-    preambleText += `
+    let preambleText = `
+            <div class='${attnChkDiv}'>
             ${updatedPages}
             </div>` 
 
@@ -3704,8 +3705,8 @@ p.flowMeasure = {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     
     return `<div style='padding-top: 50px; width: 900px; font-size:16px'> 
-        <p> Throughout the ${isSecondTime ? textNew.game2 : textNew.game1}, to what extent did you feel immersed 
-        and engaged in what you were doing? 
+        <p> Throughout the ${isSecondTime ? textNew.game2 : textNew.game1}, how immersed 
+        and engaged did you feel in what you were doing? 
         <p>To report how immersed and engaged you felt, please answer the following questions.</p>
         </div>`;
 },
@@ -3713,31 +3714,31 @@ p.flowMeasure = {
                 let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
                 return [
         {
-            prompt: `How <b>immersed</b> did you feel playing the ${isSecondTime ? textNew.game2 : textNew.game1}?`,
+            prompt: `During the ${isSecondTime ? textNew.game2 : textNew.game1}, how <b>immersed</b> did you feel in what you were doing?`,
             name: `flow_0`,
             labels: FlowScale0,
             required: true,
         },
         {
-            prompt: `How <b>engaged</b> did you feel playing the ${isSecondTime ? textNew.game2 : textNew.game1}?`,
+            prompt: `During the ${isSecondTime ? textNew.game2 : textNew.game1}, how <b>engaged</b> did you feel in what you were doing?`,
             name: `flow_1`,
             labels: FlowScale1,
             required: true,
         },
         {
-            prompt: `How <b>engrossed</b> did you feel playing the ${isSecondTime ? textNew.game2 : textNew.game1}?`,
+            prompt: `During the ${isSecondTime ? textNew.game2 : textNew.game1}, how <b>engrossed</b> did you feel in what you were doing?`,
             name: `flow_2`,
             labels: FlowScale2,
             required: true,
         },
         {
-            prompt: `How <b>absorbed</b> did you feel playing the ${isSecondTime ? textNew.game2 : textNew.game1}?`,
+            prompt: `During the ${isSecondTime ? textNew.game2 : textNew.game1}, how <b>absorbed</b> did you feel in what you were doing?`,
             name: `flow_3`,
             labels: FlowScale3,
             required: true,
         },
         {
-            prompt: `How <b>bored</b> did you feel playing the ${isSecondTime ? textNew.game2 : textNew.game1}?`,
+            prompt: `During the ${isSecondTime ? textNew.game2 : textNew.game1}, how <b>bored</b> did you feel in what you were doing?`,
             name: `flow_4`,
             labels: FlowScale4,
             required: true,
