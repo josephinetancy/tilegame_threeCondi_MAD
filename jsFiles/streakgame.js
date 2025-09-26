@@ -3704,7 +3704,7 @@ p.flowMeasure = {
     preamble: () => {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     
-    return `<div style='padding-top: 50px; width: 900px; font-size:16px'> 
+    return `<div style='padding-top: 50px; width: 950px; font-size:16px'> 
         <p>During the ${isSecondTime ? textNew.game2 : textNew.game1}, how immersed 
         and engaged did you feel in what you were doing? 
         <p>To report how immersed and engaged you felt, please answer the following questions as honestly and accurately as possible.</p>
@@ -3776,8 +3776,8 @@ p.enjoymentMeasure = {
     preamble: () => {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     
-    return `<div style='padding-top: 50px; width: 900px; font-size:16px'> 
-        <p>Below are a few more the ${isSecondTime ? textNew.game2 : textNew.game1}.</p>
+    return `<div style='padding-top: 50px; width: 950px; font-size:16px'> 
+        <p>Below are a few more questions about the ${isSecondTime ? textNew.game2 : textNew.game1}.</p>
         <p>Instead of asking about immersion and engagement, these questions ask about <b>enjoyment</b>.</p> 
         <p>Report how much you <b>enjoyed</b> the ${isSecondTime ? textNew.game2 : textNew.game1} by answering the following questions as honestly and accurately as possible.</p>
         </div>`;
