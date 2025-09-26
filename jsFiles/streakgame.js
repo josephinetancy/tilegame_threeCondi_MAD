@@ -3686,11 +3686,11 @@ p.task.GroupCircleLow = {
 
     p.Qs = {};
 
-    const FlowScale0 = ['0<br>A little immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite immersed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More immersed than I've ever felt`];
-    const FlowScale1 = ['0<br>A little engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite engaged', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engaged than I've ever felt`];
-    const FlowScale2 = ['0<br>A little engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite engrossed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engrossed than I've ever felt`];
-    const FlowScale3 = ['0<br>A little absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite absorbed', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More absorbed than I've ever felt`];
-    const FlowScale4 = ['0<br>A little bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>Quite bored', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More bored than I've ever felt`];
+    const FlowScale0 = ['0<br>A little immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More immersed than I've ever felt`];
+    const FlowScale1 = ['0<br>A little engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engaged than I've ever felt`];
+    const FlowScale2 = ['0<br>A little engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engrossed than I've ever felt`];
+    const FlowScale3 = ['0<br>A little absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More absorbed than I've ever felt`];
+    const FlowScale4 = ['0<br>A little bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More bored than I've ever felt`];
 
     const EnjoyScale0 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've enjoyed anything`];
     const EnjoyScale1 = ['0<br>Zero fun', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More fun than I've ever had`];
@@ -3705,9 +3705,9 @@ p.flowMeasure = {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     
     return `<div style='padding-top: 50px; width: 900px; font-size:16px'> 
-        <p> Throughout the ${isSecondTime ? textNew.game2 : textNew.game1}, how immersed 
+        <p>During the ${isSecondTime ? textNew.game2 : textNew.game1}, how immersed 
         and engaged did you feel in what you were doing? 
-        <p>To report how immersed and engaged you felt, please answer the following questions.</p>
+        <p>To report how immersed and engaged you felt, please answer the following questions as honestly and accurately as possible.</p>
         </div>`;
 },
             questions: () => {
@@ -3777,8 +3777,9 @@ p.enjoymentMeasure = {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     
     return `<div style='padding-top: 50px; width: 900px; font-size:16px'> 
-        <p> Throughout the ${isSecondTime ? textNew.game2 : textNew.game1}, to what extent did you enjoy and felt entertained in what you were doing? 
-        <p>To report how much you enjoyed and felt entertained, please answer the following questions.</p>
+        <p>Below are a few more the ${isSecondTime ? textNew.game2 : textNew.game1}.</p>
+        <p>Instead of asking about immersion and engagement, these questions ask about <b>enjoyment</b>.</p> 
+        <p>Report how much you <b>enjoyed</b> the ${isSecondTime ? textNew.game2 : textNew.game1} by answering the following questions as honestly and accurately as possible.</p>
         </div>`;
 },
             questions: () => {
