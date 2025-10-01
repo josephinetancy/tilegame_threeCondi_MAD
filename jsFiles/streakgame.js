@@ -2,7 +2,7 @@
 
 //const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
-randomAssignment = 4;
+randomAssignment = 2;
 
 console.log(randomAssignment);
 
