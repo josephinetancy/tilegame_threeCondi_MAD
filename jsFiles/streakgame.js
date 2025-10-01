@@ -1,6 +1,8 @@
 //randomAssignment
 
-const randomAssignment = Math.floor(Math.random() * 8) + 1; 
+//const randomAssignment = Math.floor(Math.random() * 8) + 1; 
+
+randomAssignment = 4;
 
 console.log(randomAssignment);
 
@@ -66,30 +68,33 @@ var textNew = {
     LL2: [1, 4, 5, 8].includes(randomAssignment) ? `+4`:`+2`, */
  // Corresponds to attnChk2 when secondTime is false
 
-WW: [1, 3, 5, 7].includes(randomAssignment) ? `7` : `8`,
+WW: [1, 3, 5, 7].includes(randomAssignment) ? `7` : 
+    [2, 6].includes(randomAssignment) ? `8` : `6`,
 
-WW2: [1, 3, 5, 7].includes(randomAssignment) ? `8` : `7`,
+WW2: [1, 5].includes(randomAssignment) ? `8` : 
+     [3, 7].includes(randomAssignment) ? `6` : `7`,
 
 WL: [1, 3, 5, 7].includes(randomAssignment)
   ? `7`
-  : ([2, 6].includes(randomAssignment) ? `4` : `6`),
+  : ([2, 6].includes(randomAssignment) ? `4` : `8`),
 
 WL2: [1, 3, 5, 7].includes(randomAssignment)
-  ? ([1, 5].includes(randomAssignment) ? `4` : `6`)
+  ? ([1, 5].includes(randomAssignment) ? `4` : `8`)
   : `7`,
 
-LW: [1, 3, 5, 7].includes(randomAssignment) ? `3` : `4`,
+LW: [1, 3, 5, 7].includes(randomAssignment) ? `3` : 
+    ([2, 6].includes(randomAssignment) ? `4` : `2`),
 
-LW2: [1, 3, 5, 7].includes(randomAssignment) ? `4` : `3`,
+LW2: [1, 5].includes(randomAssignment) ? `4` : 
+     ([3, 7].includes(randomAssignment) ? `2` : `3`),
 
 LL: [1, 3, 5, 7].includes(randomAssignment)
   ? `3`
-  : ([2, 6].includes(randomAssignment) ? `4` : `2`),
+  : `4`,
 
 LL2: [1, 3, 5, 7].includes(randomAssignment)
-  ? ([1, 5].includes(randomAssignment) ? `4` : `2`)
-  : `3`,
-}
+  ? `4`
+  : `3`,}
 
 /*
 ///
@@ -1176,7 +1181,7 @@ pregroupPage332: [
 </div>`],
 pregroupPage: [
   `<div class='parent'>
-  <p>If both you and your partner succeed, you'll get 8 points.</p> 
+  <p>If both you and your partner succeed, you'll get ${textNew.WW} points.</p> 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1190,7 +1195,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 8 points, you'll see this:</p>
+  <p>If you earn ${textNew.WW} points, you'll see this:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1206,7 +1211,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +8
+      +${textNew.WW}
     </div>
 
     <div style="
@@ -1416,7 +1421,7 @@ pregroupPage: [
 groupPage: [
    `<div class='specialOnly'>
         <p>To summarize, you and your partner will earn points based on these rules: </p>
-        <p>If both you and your partner succeed, you'll get 8 points.</p> 
+        <p>If both you and your partner succeed, you'll get ${textNew.WW} points.</p> 
         <p>If you succeed and your partner misses, you'll get ${textNew.WL} points.</p>
         <p>If you miss and your partner succeeds, you'll get ${textNew.LW} points.</p>
         <p>If both you and your partner miss, you'll get ${textNew.LL} points.</p> 
@@ -1474,7 +1479,7 @@ groupPage: [
                             <span style="font-size: 12px; font-weight: bold;">(you)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
+                    <td><b>+${textNew.WW}</b></td>
                     <td><b>+${textNew.WL}</b></td>
                     <td><b>+${textNew.LW}</b></td>
                     <td><b>+${textNew.LL}</b></td>
@@ -1488,7 +1493,7 @@ groupPage: [
                             <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
+                    <td><b>+${textNew.WW}</b></td>
                     <td><b>+${textNew.LW}</b></td>
                     <td><b>+${textNew.WL}</b></td>
                     <td><b>+${textNew.LL}</b></td>
@@ -2253,38 +2258,30 @@ attnChk0: !isSecondTime
       ? `My earnings depend on both my performance and my partner's performance.`
       : `My earnings depend on my performance only.`),
 attnChk1: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+7` : `+8`)
-  : ([1, 3, 5, 7].includes(randomAssignment) ? `+8` : `+7`),
+  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+7` : 
+     ([2, 6].includes(randomAssignment) ? `+8` : `+6`))
+  : ([1, 5].includes(randomAssignment) ? `+8` : 
+     ([3, 7].includes(randomAssignment) ? `+6` : `+7`)),
 
 attnChk2: !isSecondTime
   ? ([1, 3, 5, 7].includes(randomAssignment)
       ? `+7`
-      : ([2, 6].includes(randomAssignment) ? `+4` : `+6`)
+      : ([2, 6].includes(randomAssignment) ? `+4` : `+8`)
     )
   : ([1, 3, 5, 7].includes(randomAssignment)
-      ? ([1, 5].includes(randomAssignment) ? `+4` : `+6`)
+      ? ([1, 5].includes(randomAssignment) ? `+4` : `+8`)
       : `+7`
     ),
 
 attnChk3: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment)
-      ? `+3`
-      : `+4`
-    )
-  : ([1, 3, 5, 7].includes(randomAssignment)
-      ? `+4`
-      : `+3`
-    ),
+  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+3` : 
+     ([2, 6].includes(randomAssignment) ? `+4` : `+2`))
+  : ([1, 5].includes(randomAssignment) ? `+4` : 
+     ([3, 7].includes(randomAssignment) ? `+2` : `+3`)),
 
 attnChk4: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment)
-      ? `+3`
-      : ([2, 6].includes(randomAssignment) ? `+4` : `+2`)
-    )
-  : ([1, 3, 5, 7].includes(randomAssignment)
-      ? ([1, 5].includes(randomAssignment) ? `+4` : `+2`)
-      : `+3`
-    ),
+  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+3` : `+4`)
+  : ([1, 3, 5, 7].includes(randomAssignment) ? `+4` : `+3`),
     };
 }
 
@@ -3071,17 +3068,17 @@ function MakeFeedback(mode) {
 
             if (mode === 'groupHigh') {
                 if (lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 6;
-                    pointsAddedAvatar2 = 4;
-                } else if (lastTrialData.outcome && partner_outcome === 1) {
                     pointsAddedAvatar1 = 8;
-                    pointsAddedAvatar2 = 8;
-                } else if (!lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 2;
                     pointsAddedAvatar2 = 2;
-                } else if (!lastTrialData.outcome && partner_outcome === 1) { 
-                    pointsAddedAvatar1 = 4;
+                } else if (lastTrialData.outcome && partner_outcome === 1) {
+                    pointsAddedAvatar1 = 6;
                     pointsAddedAvatar2 = 6;
+                } else if (!lastTrialData.outcome && partner_outcome === 0) {
+                    pointsAddedAvatar1 = 4;
+                    pointsAddedAvatar2 = 4;
+                } else if (!lastTrialData.outcome && partner_outcome === 1) { 
+                    pointsAddedAvatar1 = 2;
+                    pointsAddedAvatar2 = 8;
                 }
             } else if (mode === 'ind') {
                 if (lastTrialData.outcome && partner_outcome === 0) {
