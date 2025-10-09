@@ -2,7 +2,7 @@
 
 //const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
-randomAssignment = 5;
+randomAssignment = 8;
 
 console.log(randomAssignment);
 
@@ -16,11 +16,11 @@ NEW
 3 = IndCircle + IntSquareHigh CHECKED
 4 = IntSquareHigh + IndCircle CHECKED
 
-5 = IndSquare + IntCircleLow 
-6 = IntCircleLow + IndSquare    
+5 = IndSquare + IntCircleLow CHECKED
+6 = IntCircleLow + IndSquare CHECKED
 
-7 = IndSquare + IntCircleHigh 
-8 = IntCircleHigh + IndSquare 
+7 = IndSquare + IntCircleHigh CHECKED
+8 = IntCircleHigh + IndSquare CHECKED
 
 */
  
