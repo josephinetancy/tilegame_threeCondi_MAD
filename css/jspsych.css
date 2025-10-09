@@ -244,7 +244,7 @@
 .specialOnly {
   position: relative;
   width: 950px;
- height: 500px; 
+ height: 650px; 
  /* height: auto; */
 }
 
@@ -258,7 +258,7 @@
 .attnChkGrpSpecial {
   position: relative;
   width: 950px;
- height: 720px; 
+ height: 620px; 
  /* height: auto; */
 }
 
@@ -276,10 +276,10 @@
  /* height: auto; */
 }
 
-.attnChkNow {
+.attnChkNow { 
   position: relative;
   width: 950px;
- height: 730px; 
+ height: 670px; 
  /* height: auto; */
 }
 
