@@ -2,7 +2,7 @@
 
 //const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
-randomAssignment = 4;
+randomAssignment = 1;
 
 console.log(randomAssignment);
 
@@ -1258,8 +1258,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>You win when you succeed and your partner misses. </p>
-        <p>When you win, you'll get 8 points.</p>
+        <p>You win when you succeed and your partner misses, like this: </p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
@@ -1270,8 +1269,10 @@ pregroupPage: [
                 </div>
             </div>
             <b><p style="margin-top: 10px;"></p></b>
+            </div>                
             </div>
-        </div>`,
+            <div style="font-size: 28px;">
+        <p><b>When you win, you'll get 8 points.</p></b>`,
 
 `<div class="parent" style="text-align: center;">
   <p>If you earn 8 points, you'll see this:</p>
@@ -1325,7 +1326,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>A winning tie is when you and your partner succeeds. </p>
+        <p>A winning tie is when you and your partner both succeeds, like this. </p>
         <p>A winning tie will get you 6 points.</p>
     </div>
 
