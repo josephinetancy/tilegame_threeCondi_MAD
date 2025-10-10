@@ -10,11 +10,11 @@ console.log(randomAssignment);
 
 NEW
 
-1 = IndCircle + IntSquareLow CHECKED
-2 = IntSquareLow + IndCircle CHECKED
+1 = IndCircle + IntSquareLow CHECKEDv2
+2 = IntSquareLow + IndCircle CHECKEDv2
 
-3 = IndCircle + IntSquareHigh CHECKED
-4 = IntSquareHigh + IndCircle CHECKED
+3 = IndCircle + IntSquareHigh CHECKEDv2
+4 = IntSquareHigh + IndCircle CHECKEDv2
 
 5 = IndSquare + IntCircleLow CHECKED
 6 = IntCircleLow + IndSquare CHECKED
@@ -459,6 +459,17 @@ presoloPage: [`<div class='parent'>
         <p>When you win, you'll get 7 points.</p>
     </div>
 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+
         <!-- Outcome 2 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
@@ -469,8 +480,7 @@ presoloPage: [`<div class='parent'>
             <b><p style="margin-top: 10px;"></p></b>
         </div>
     </div>
-</div>
-`,
+</div>`,
 
 `<div class="parent" style="text-align: center;">
   <p>If you earn 7 points, you'll see this:</p>
@@ -693,6 +703,17 @@ presoloPage2: [`<div class='parent'>
         <p>When you win, you'll get 7 points.</p>
     </div>
 
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+        </div>
+
         <!-- Outcome 2 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
@@ -703,8 +724,7 @@ presoloPage2: [`<div class='parent'>
             <b><p style="margin-top: 10px;"></p></b>
         </div>
     </div>
-</div>
-`,
+</div>`,
 
 `<div class="parent" style="text-align: center;">
   <p>If you earn 7 points, you'll see this:</p>
