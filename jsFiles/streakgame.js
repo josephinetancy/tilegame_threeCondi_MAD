@@ -2,7 +2,7 @@
 
 //const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
-randomAssignment = 8;
+randomAssignment = 4;
 
 console.log(randomAssignment);
 
@@ -450,17 +450,14 @@ let avatarResponse = '#2669ee';
         </div>` 
                 ],
 presoloPage: [`<div class='parent'>
-  <p><b>You win: </b>If you succeed, you'll get 7 points. <br>(Your partner's performance doesn't matter).</p> 
-    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
-        <!-- Outcome 1 -->
-        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
-                    <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
-                </div>
-            </div>
-            <b><p style="margin-top: 10px;"></p></b>
-        </div>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed. Your partner's performance doesn't matter.</p>
+        <p>When you win, you'll get 7 points.</p>
+    </div>
 
         <!-- Outcome 2 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -472,7 +469,8 @@ presoloPage: [`<div class='parent'>
             <b><p style="margin-top: 10px;"></p></b>
         </div>
     </div>
-</div>`,
+</div>
+`,
 
 `<div class="parent" style="text-align: center;">
   <p>If you earn 7 points, you'll see this:</p>
@@ -520,7 +518,14 @@ presoloPage: [`<div class='parent'>
   </div>
 </div>`,
                  `<div class='parent'>
-                 <p><b>You lose: </b>If you miss, you'll get 3 points.<br>(Your partner's performance doesn't matter).</p> 
+                     <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You lose when you miss. Your partner's performance doesn't matter.</p>
+        <p>When you lose, you'll get 3 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
@@ -679,17 +684,14 @@ soloPage: [
 </div>`
 ],
 presoloPage2: [`<div class='parent'>
-  <p><b>You win: </b>If you succeed, you'll get 7 points. <br>(Your partner's performance doesn't matter).</p> 
-    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
-        <!-- Outcome 1 -->
-        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
-                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
-                </div>
-            </div>
-            <b><p style="margin-top: 10px;"></p></b>
-        </div>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed. Your partner's performance doesn't matter.</p>
+        <p>When you win, you'll get 7 points.</p>
+    </div>
 
         <!-- Outcome 2 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -701,7 +703,8 @@ presoloPage2: [`<div class='parent'>
             <b><p style="margin-top: 10px;"></p></b>
         </div>
     </div>
-</div>`,
+</div>
+`,
 
 `<div class="parent" style="text-align: center;">
   <p>If you earn 7 points, you'll see this:</p>
@@ -749,7 +752,14 @@ presoloPage2: [`<div class='parent'>
   </div>
 </div>`,
                  `<div class='parent'>
-                 <p><b>You lose: </b>If you miss, you'll get 3 points.<br>(Your partner's performance doesn't matter).</p> 
+                     <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You lose when you miss. Your partner's performance doesn't matter.</p>
+        <p>When you lose, you'll get 3 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
@@ -909,8 +919,14 @@ soloPage2: [
 ],
 pregroupPage33: [ 
 `<div class='parent'>
-   <p> <b>You win:</b> if you succeed and your partner misses, you'll get 8 points.</p> 
-    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed and your partner misses. </p>
+        <p>When you win, you'll get 8 points.</p>
+    </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
@@ -969,7 +985,14 @@ pregroupPage33: [
 </div>`,
 
 `<div class='parent'>
-  <p><b>Non-win:</b> If you tie or lose to your partner, you'll get 4 points.</p>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Non-win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A non-win is when you tie or lose to your partner. </p>
+        <p>A non-win will get you 4 points.</p>
+    </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
     
@@ -1053,8 +1076,14 @@ pregroupPage33: [
 </div>`],
 pregroupPage332: [ 
 `<div class='parent'>
-   <p> <b>You win:</b> if you succeed and your partner misses, you'll get 8 points.</p> 
-    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed and your partner misses. </p>
+        <p>When you win, you'll get 8 points.</p>
+    </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
@@ -1113,7 +1142,14 @@ pregroupPage332: [
 </div>`,
 
 `<div class='parent'>
-  <p><b>Non-win:</b> If you tie or lose to your partner, you'll get 4 points.</p>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Non-win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A non-win is when you tie or lose to your partner. </p>
+        <p>A non-win will get you 4 points.</p>
+    </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
     
@@ -1197,7 +1233,14 @@ pregroupPage332: [
 </div>`],
 pregroupPage: [
 `<div class='parent'>
-  <p><b>You win:</b> if you succeed and your partner misses, you'll get ${textNew.WL} points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed and your partner misses. </p>
+        <p>When you win, you'll get 8 points.</p>
+    </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1211,7 +1254,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn ${textNew.WL} points, you'll see this:</p>
+  <p>If you earn 8 points, you'll see this:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1227,7 +1270,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +${textNew.WL}
+      +8
     </div>
 
     <div style="
@@ -1257,7 +1300,15 @@ pregroupPage: [
 </div>`,
 
   `<div class='parent'>
-  <p><b>Winning tie: </b>If both you and your partner succeed, you'll get ${textNew.WW} points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A winning tie is when you and your partner succeeds. </p>
+        <p>A winning tie will get you 6 points.</p>
+    </div>
+
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1271,7 +1322,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn ${textNew.WW} points, you'll see this:</p>
+  <p>If you earn 6 points, you'll see this:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1287,7 +1338,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +${textNew.WW}
+      +6
     </div>
 
     <div style="
@@ -1319,7 +1370,14 @@ pregroupPage: [
 
 
                  `<div class='parent'>
-                 <p><b>Losing tie: </b> If both you and your partner miss, you'll get ${textNew.LL} points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A losing tie is when you and your partner miss. </p>
+        <p>A losing tie will get you 4 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
@@ -1332,7 +1390,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn ${textNew.LL} points, you'll see this:</p>
+  <p>If you earn 4 points, you'll see this:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1348,7 +1406,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +${textNew.LL}
+      +4
     </div>
 
     <div style="
@@ -1377,7 +1435,14 @@ pregroupPage: [
   </div>
 </div>`, 
                  `<div class='parent'>
-                 <p><b>You lose: </b>If you miss and your partner succeeds, you'll get ${textNew.LW} points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You lose when you miss and your partner succeeds. </p>
+        <p>When you lose, you'll get 2 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
@@ -1390,7 +1455,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn ${textNew.LW} points, you'll see this:</p>
+  <p>If you earn 2 points, you'll see this:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1406,7 +1471,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +${textNew.LW}
+      +2
     </div>
 
     <div style="
@@ -1533,7 +1598,14 @@ groupPage: [
 ],
 pregroupPage2: [
  `<div class='parent'>
-  <p><b>You win:</b> if you succeed and your partner misses, you'll get 8 points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You win when you succeed and your partner misses. </p>
+        <p>When you win, you'll get 8 points.</p>
+    </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1593,7 +1665,15 @@ pregroupPage2: [
 </div>`,
 
   `<div class='parent'>
-  <p><b>Winning tie: </b>If both you and your partner succeed, you'll get 6 points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A winning tie is when you and your partner succeeds. </p>
+        <p>A winning tie will get you 6 points.</p>
+    </div>
+
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1655,7 +1735,14 @@ pregroupPage2: [
 
 
                  `<div class='parent'>
-                 <p><b>Losing tie: </b> If both you and your partner miss, you'll get 4 points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>A losing tie is when you and your partner miss. </p>
+        <p>A losing tie will get you 4 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
@@ -1713,7 +1800,14 @@ pregroupPage2: [
   </div>
 </div>`, 
                  `<div class='parent'>
-                 <p><b>You lose: </b>If you miss and your partner succeeds, you'll get 2 points.</p> 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>You lose when you miss and your partner succeeds. </p>
+        <p>When you lose, you'll get 2 points.</p>
+    </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
