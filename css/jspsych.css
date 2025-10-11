@@ -258,14 +258,14 @@
 .attnChkGrpSpecial {
   position: relative;
   width: 950px;
- height: 620px; 
+ height: 480px; 
  /* height: auto; */
 }
 
 .attnChkGrp {
   position: relative;
   width: 950px;
- height: 720px; 
+ height: 480px; 
  /* height: auto; */
 }
 
@@ -279,7 +279,7 @@
 .attnChkNow { 
   position: relative;
   width: 950px;
- height: 670px; 
+ height: 480px; 
  /* height: auto; */
 }
 
