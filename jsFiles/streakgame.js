@@ -482,7 +482,7 @@ presoloPage: [`<div class='parent'>
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 7 points, you'll see this:</p>
+  <p>After succeeding, you'll see this message indicating that you earned 7 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -555,7 +555,7 @@ presoloPage: [`<div class='parent'>
             </div>
         </div>`,
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 3 points, you'll see this:</p>
+  <p>After missing, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -811,7 +811,7 @@ presoloPage2: [`<div class='parent'>
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 7 points, you'll see this:</p>
+  <p>After succeeding, you'll see this message indicating that you earned 7 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -884,7 +884,7 @@ presoloPage2: [`<div class='parent'>
             </div>
         </div>`,
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 3 points, you'll see this:</p>
+  <p>After missing, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1112,7 +1112,7 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>You win when you succeed and your partner misses, like this. </p>
+        <p>When you succeed and your partner misses, you win the round.</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1145,7 +1145,7 @@ pregroupPage33: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 8 points, you'll see this:</p>
+  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1196,7 +1196,7 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>A non-win is when you tie or lose to your partner, like this. </p>
+        <p>When you tie or lose to your partner, this is considered a non-win.</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1279,7 +1279,7 @@ pregroupPage33: [
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 4 points, you'll see this:</p>
+  <p>After non-wins, you'll see this message indicating that you earned 4 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1421,7 +1421,7 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>You win when you succeed and your partner misses. </p>
+        <p>When you succeed and your partner misses, you win the round. </p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1454,7 +1454,7 @@ pregroupPage332: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 8 points, you'll see this:</p>
+  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1505,7 +1505,7 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>A non-win is when you tie or lose to your partner, like this. </p>
+        <p>When you tie or lose to your partner, this is considered a non-win.</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1588,7 +1588,7 @@ pregroupPage332: [
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 4 points, you'll see this:</p>
+  <p>After non-wins, you'll see this message indicating that you earned 4 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1730,7 +1730,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>You win when you succeed and your partner misses, like this: </p>
+        <p>When you succeed and your partner misses, you win the round:</p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
@@ -1767,7 +1767,7 @@ pregroupPage: [
             <div style="font-size: 28px;">`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 8 points, you'll see this:</p>
+  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1818,7 +1818,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>A winning tie is when you and your partner both succeed, like this. </p>
+        <p>When you and your partner both succeed, this is considered a winning tie.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1855,7 +1855,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 6 points, you'll see this:</p>
+  <p>After winning ties, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1906,7 +1906,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>A losing tie is when you and your partner both miss, like this. </p>
+        <p>When you and your partner both miss, this is considered a losing tie.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1939,7 +1939,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 4 points, you'll see this:</p>
+  <p>After losing ties, you'll see this message indicating that you earned 4 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1989,7 +1989,7 @@ pregroupPage: [
     </div>
 
     <div style="text-align: center;">
-        <p>You lose when you miss and your partner succeeds, like this. </p>
+        <p>When you miss and your partner succeeds, you lose the round. </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -2022,7 +2022,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 2 points, you'll see this:</p>
+  <p>After losing, you'll see this message indicating that you earned 2 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2258,7 +2258,7 @@ pregroupPage2: [
     </div>
 
     <div style="text-align: center;">
-        <p>You win when you succeed and your partner misses, like this. </p>
+        <p>When you succeed and your partner misses, you win the round.</p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
@@ -2292,7 +2292,7 @@ pregroupPage2: [
             </div>
         </div>`,
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 8 points, you'll see this:</p>
+  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2343,7 +2343,7 @@ pregroupPage2: [
     </div>
 
     <div style="text-align: center;">
-        <p>A winning tie is when you and your partner both succeed, like this. </p>
+        <p>When you and your partner both succeed, this is considered a winning tie.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -2380,7 +2380,7 @@ pregroupPage2: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 6 points, you'll see this:</p>
+  <p>After winning ties, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2433,7 +2433,7 @@ pregroupPage2: [
     </div>
 
     <div style="text-align: center;">
-        <p>A losing tie is when you and your partner both miss, like this. </p>
+        <p>When you and your partner both miss, this is considered a losing tie.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -2466,7 +2466,7 @@ pregroupPage2: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 4 points, you'll see this:</p>
+  <p>After losing ties, you'll see this message indicating that you earned 4 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2516,7 +2516,7 @@ pregroupPage2: [
     </div>
 
     <div style="text-align: center;">
-        <p>You lose when you miss and your partner succeeds, like this. </p>
+        <p>When you miss and your partner succeeds, you lose the round. </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -2549,7 +2549,7 @@ pregroupPage2: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>If you earn 2 points, you'll see this:</p>
+  <p>After losing, you'll see this message indicating that you earned 2 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
