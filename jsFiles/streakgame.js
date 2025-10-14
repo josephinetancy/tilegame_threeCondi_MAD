@@ -3566,7 +3566,7 @@ variables for plugins
 ///
 */
 
-let noOfTrials = 12; //so 48 in total
+let noOfTrials = 1; //so 48 in total
 
 ///fake participant's activation time for WL and LL trials, that far exceeds trial duration
 let partner_rtL = 20000; //for when partner "loses".
@@ -4826,6 +4826,42 @@ const html = {
 
  p.demographics = (function() {
 
+    const choice = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: `<p>Imagine you had to play either the Square Game or the Circle Game one more time.</p>
+    <p><strong>Which game would you rather play again?</strong></p>`,
+    choices: ['Circle Game', 'Square Game'],
+    on_finish: (data) => {
+
+        const selectedChoice = data.response === 0 ? 'Circle Game' : 'Square Game';
+        
+        // Determine choice category based on RandomAssignment and selection
+        if (randomAssignment >= 1 && randomAssignment <= 4) {
+            if (selectedChoice === 'Circle Game') {
+                data.choice = 'ind';
+            } else { // Square Game
+                if (randomAssignment === 1 || randomAssignment === 2) {
+                    data.choice = 'groupLow';
+                } else { // randomAssignment === 3 || randomAssignment === 4
+                    data.choice = 'groupHigh';
+                }
+            }
+        } else if (randomAssignment >= 5 && randomAssignment <= 8) {
+            if (selectedChoice === 'Square Game') {
+                data.choice = 'ind';
+            } else { // Circle Game
+                if (randomAssignment === 5 || randomAssignment === 6) {
+                    data.choice = 'groupLow';
+                } else { // randomAssignment === 7 || randomAssignment === 8
+                    data.choice = 'groupHigh';
+                }
+            }
+        }
+        
+        data.raw_ChoiceResponse = selectedChoice;
+        data.randomAssignment = randomAssignment;
+    }
+};
 
         const taskComplete = {
             type: jsPsychInstructions,
@@ -4895,7 +4931,7 @@ const html = {
         }; 
 
         const demos = {
-            timeline: [taskComplete, gender, age, ethnicity, english, sus, finalWord, pid]
+            timeline: [choice, taskComplete, gender, age, ethnicity, english, sus, finalWord, pid]
         };
 
         return demos;
