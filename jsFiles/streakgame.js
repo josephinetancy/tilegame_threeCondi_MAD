@@ -523,7 +523,7 @@ presoloPage: [`<div class='parent'>
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
                  `<div class='parent'>
@@ -596,7 +596,7 @@ presoloPage: [`<div class='parent'>
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 `<div class='specialOnly'>
@@ -852,7 +852,7 @@ presoloPage2: [`<div class='parent'>
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
                  `<div class='parent'>
@@ -925,7 +925,7 @@ presoloPage2: [`<div class='parent'>
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
  `<div class='specialOnly'>
@@ -1186,7 +1186,7 @@ pregroupPage33: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -1320,7 +1320,7 @@ pregroupPage33: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 `<div class='specialOnly'>
@@ -1495,7 +1495,7 @@ pregroupPage332: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -1629,7 +1629,7 @@ pregroupPage332: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 `<div class='specialOnly'>
@@ -1808,7 +1808,7 @@ pregroupPage: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -1896,7 +1896,7 @@ pregroupPage: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -1980,7 +1980,7 @@ pregroupPage: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`, 
                  `<div class='parent'>
@@ -2063,7 +2063,7 @@ pregroupPage: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -2333,7 +2333,7 @@ pregroupPage2: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -2421,7 +2421,7 @@ pregroupPage2: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 
@@ -2507,7 +2507,7 @@ pregroupPage2: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`, 
                  `<div class='parent'>
@@ -2590,7 +2590,7 @@ pregroupPage2: [
     font-size: 24px;
     font-weight: bold;
   ">
-    Get ready for the next tile!
+    Get ready for the next round!
   </div>
 </div>`,
 `<div class='specialOnly'>
@@ -3931,7 +3931,7 @@ function generateSoloAvatarFeedback(avatar1, avatar1Text, avatar1TotalPoints, co
 
         <!-- Line at the bottom -->
         <div style="text-align: center; margin-top: 30px; font-size: 24px; font-weight: bold;">
-            Get ready for the next tile!
+            Get ready for the next round!
         </div>
     `;
 }
@@ -4164,7 +4164,7 @@ function MakeTooFast(round) {
         choices: [],  // Disables any response
         stimulus: () => {
             const lastKeyPress = jsPsych.data.get().last(1).values()[0].response;
-            return lastKeyPress === " " ? `<div style='font-size: 20px'><p>Too Fast!</p><p>Please wait for the tile to appear before pressing your SPACE BAR! </p></div>` : '';
+            return lastKeyPress === " " ? `<div style='font-size: 20px'><p>Too Fast!</p><p>Please wait for the shapes to appear before pressing your SPACE BAR! </p></div>` : '';
         },
         trial_duration: () => {
             const lastKeyPress = jsPsych.data.get().last(1).values()[0].response;
@@ -4633,17 +4633,17 @@ p.task.GroupCircleLow = {
 
     p.Qs = {};
 
-    const FlowScale0 = ['0<br>A little immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More immersed than I've ever felt`];
-    const FlowScale1 = ['0<br>A little engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engaged than I've ever felt`];
-    const FlowScale2 = ['0<br>A little engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More engrossed than I've ever felt`];
-    const FlowScale3 = ['0<br>A little absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More absorbed than I've ever felt`];
-    const FlowScale4 = ['0<br>A little bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More bored than I've ever felt`];
+    const FlowScale0 = ['0<br>A little immersed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>', `8<br>More immersed than I've ever felt`];
+    const FlowScale1 = ['0<br>A little engaged', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>', `8<br>More engaged than I've ever felt`];
+    const FlowScale2 = ['0<br>A little engrossed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>', `8<br>More engrossed than I've ever felt`];
+    const FlowScale3 = ['0<br>A little absorbed', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More absorbed than I've ever felt`];
+    const FlowScale4 = ['0<br>A little bored', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>', `8<br>More bored than I've ever felt`];
 
-    const EnjoyScale0 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've enjoyed anything`];
-    const EnjoyScale1 = ['0<br>Zero fun', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More fun than I've ever had`];
-    const EnjoyScale2 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More entertained than I've ever felt`];
-    const EnjoyScale3 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've ever liked anything`];
-    const EnjoyScale4 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>','8<br>', '9<br>', `10<br>More than I've ever disliked anything`];
+    const EnjoyScale0 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More than I've enjoyed anything`];
+    const EnjoyScale1 = ['0<br>Zero fun', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More fun than I've ever had`];
+    const EnjoyScale2 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More entertained than I've ever felt`];
+    const EnjoyScale3 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More than I've ever liked anything`];
+    const EnjoyScale4 = ['0<br>Not at all', '1<br>', '2<br>', '3<br>', '4<br>', '5<br>', '6<br>', '7<br>',`8<br>More than I've ever disliked anything`];
 
     
 p.flowMeasure = {
