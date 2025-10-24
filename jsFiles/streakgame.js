@@ -292,7 +292,7 @@ let avatarResponse = '#2669ee';
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color}">
                      <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -301,7 +301,7 @@ let avatarResponse = '#2669ee';
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -311,7 +311,7 @@ let avatarResponse = '#2669ee';
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -320,7 +320,7 @@ let avatarResponse = '#2669ee';
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -412,7 +412,7 @@ let avatarResponse = '#2669ee';
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                      <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -420,7 +420,7 @@ let avatarResponse = '#2669ee';
             </div>
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -428,7 +428,7 @@ let avatarResponse = '#2669ee';
             </div>
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -436,7 +436,7 @@ let avatarResponse = '#2669ee';
             </div>
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -455,7 +455,7 @@ presoloPage: [`<div class='parent'>
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed, you'll get 7 points. (Your partner's performance doesn't matter.) </p>
+        <p>When you succeed, you'll get 8 points. (Your partner's performance doesn't matter.) </p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -482,7 +482,7 @@ presoloPage: [`<div class='parent'>
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After succeeding, you'll see this message indicating that you earned 7 points:</p>
+  <p>After succeeding, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -498,7 +498,7 @@ presoloPage: [`<div class='parent'>
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +7
+      +8
     </div>
 
     <div style="
@@ -532,12 +532,12 @@ presoloPage: [`<div class='parent'>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss, you'll get 3 points. (Your partner's performance doesn't matter.) </p>
+        <p>When you miss, you'll get 2 points. (Your partner's performance doesn't matter.) </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -546,7 +546,7 @@ presoloPage: [`<div class='parent'>
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -555,7 +555,7 @@ presoloPage: [`<div class='parent'>
             </div>
         </div>`,
 `<div class="parent" style="text-align: center;">
-  <p>After missing, you'll see this message indicating that you earned 3 points:</p>
+  <p>After missing, you'll see this message indicating that you earned 2 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -571,7 +571,7 @@ presoloPage: [`<div class='parent'>
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +3
+      +2
     </div>
 
     <div style="
@@ -601,8 +601,8 @@ presoloPage: [`<div class='parent'>
 </div>`,
 `<div class='specialOnly'>
     <p> To summarize, you and your partner will earn points based on these rules:</p>
-        <p><b>You succeed</b>: If you succeed, you'll get 7 points.</p> 
-        <p><b>You miss</b>: If you miss, you'll get 3 points. </p>
+        <p><b>You succeed</b>: If you succeed, you'll get 8 points.</p> 
+        <p><b>You miss</b>: If you miss, you'll get 2 points. </p>
         <p>Your outcome depends on your performance only. Remember: Every 5 points is worth 1 cent. </p>
  <div id="shape-wrapper" style="display: flex; justify-content: center;">
     <div class="table-container" style="display: block; clear: both;">
@@ -621,15 +621,6 @@ presoloPage: [`<div class='parent'>
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape1}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -640,6 +631,15 @@ presoloPage: [`<div class='parent'>
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape1}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape1}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -648,7 +648,7 @@ presoloPage: [`<div class='parent'>
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -664,10 +664,10 @@ presoloPage: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -678,10 +678,10 @@ presoloPage: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
             </tr>
         </table>
     </div>
@@ -709,15 +709,6 @@ soloPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape1}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -728,6 +719,15 @@ soloPage: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape1}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape1}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -736,7 +736,7 @@ soloPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -752,10 +752,10 @@ soloPage: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -766,10 +766,10 @@ soloPage: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
             </tr>
         </table>
     </div>
@@ -784,7 +784,7 @@ presoloPage2: [`<div class='parent'>
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed, you'll get 7 points. (Your partner's performance doesn't matter.) </p>
+        <p>When you succeed, you'll get 8 points. (Your partner's performance doesn't matter.) </p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -811,7 +811,7 @@ presoloPage2: [`<div class='parent'>
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After succeeding, you'll see this message indicating that you earned 7 points:</p>
+  <p>After succeeding, you'll see this message indicating that you earned 8 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -827,7 +827,7 @@ presoloPage2: [`<div class='parent'>
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +7
+      +8
     </div>
 
     <div style="
@@ -861,12 +861,12 @@ presoloPage2: [`<div class='parent'>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss, you'll get 3 points. (Your partner's performance doesn't matter.) </p>
+        <p>When you miss, you'll get 2 points. (Your partner's performance doesn't matter.) </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -875,7 +875,7 @@ presoloPage2: [`<div class='parent'>
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -884,7 +884,7 @@ presoloPage2: [`<div class='parent'>
             </div>
         </div>`,
 `<div class="parent" style="text-align: center;">
-  <p>After missing, you'll see this message indicating that you earned 3 points:</p>
+  <p>After missing, you'll see this message indicating that you earned 2 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -900,7 +900,7 @@ presoloPage2: [`<div class='parent'>
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +3
+      +2
     </div>
 
     <div style="
@@ -930,8 +930,8 @@ presoloPage2: [`<div class='parent'>
 </div>`,
  `<div class='specialOnly'>
     <p> To summarize, you and your partner will earn points based on these rules:</p>
-        <p><b>You succeed</b>: If you succeed, you'll get 7 points.</p> 
-        <p><b>You miss</b>: If you miss, you'll get 3 points. </p>
+        <p><b>You succeed</b>: If you succeed, you'll get 8 points.</p> 
+        <p><b>You miss</b>: If you miss, you'll get 2 points. </p>
         <p>Your outcome depends on your performance only. Remember: Every 5 points is worth 1 cent. </p>
  <div id="shape-wrapper" style="display: flex; justify-content: center;">
     <div class="table-container" style="display: block; clear: both;">
@@ -949,15 +949,6 @@ presoloPage2: [`<div class='parent'>
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape2}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -968,6 +959,15 @@ presoloPage2: [`<div class='parent'>
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape2}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape2}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -976,7 +976,7 @@ presoloPage2: [`<div class='parent'>
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -992,10 +992,10 @@ presoloPage2: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -1006,10 +1006,10 @@ presoloPage2: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
             </tr>
         </table>
     </div>
@@ -1036,15 +1036,6 @@ soloPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape1}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -1055,6 +1046,15 @@ soloPage2: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape1}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape1}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -1063,7 +1063,7 @@ soloPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -1079,10 +1079,10 @@ soloPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -1093,10 +1093,10 @@ soloPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+3</b></td>
-                <td><b>+3</b></td>
-                <td><b>+7</b></td>
-                <td><b>+7</b></td>
+                <td><b>+2</b></td>
+                <td><b>+2</b></td>
+                <td><b>+8</b></td>
+                <td><b>+8</b></td>
             </tr>
         </table>
     </div>
@@ -1112,12 +1112,12 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round.</p>
+        <p>When you and your partner both succeed, you win:</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1131,12 +1131,12 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 8 points.</p>
+        <p>When you win, you'll get 11 points.</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1145,7 +1145,7 @@ pregroupPage33: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
+  <p>When you win, you'll see this message indicating that you earned 11 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1161,7 +1161,7 @@ pregroupPage33: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +8 
+      +11
     </div>
 
     <div style="
@@ -1196,7 +1196,7 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you tie or lose to your partner, this is considered a non-win.</p>
+        <p>When you or your partner loses, this is considered a non-win:</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1204,7 +1204,7 @@ pregroupPage33: [
     <!-- Outcome 1 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
         </div>
       </div>
@@ -1214,7 +1214,7 @@ pregroupPage33: [
     <!-- Outcome 2 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1224,7 +1224,7 @@ pregroupPage33: [
     <!-- Outcome 3 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1240,7 +1240,7 @@ pregroupPage33: [
     </div>
 
     <div style="text-align: center;">
-        <p>A non-win will get you 4 points.</p>
+        <p>A non-win will get you 3 points.</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1248,7 +1248,7 @@ pregroupPage33: [
     <!-- Outcome 1 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
         </div>
       </div>
@@ -1258,7 +1258,7 @@ pregroupPage33: [
     <!-- Outcome 2 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1268,7 +1268,7 @@ pregroupPage33: [
     <!-- Outcome 3 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1279,7 +1279,7 @@ pregroupPage33: [
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After non-wins, you'll see this message indicating that you earned 4 points:</p>
+  <p>After non-wins, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1295,7 +1295,7 @@ pregroupPage33: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +4
+      +3
     </div>
 
     <div style="
@@ -1325,8 +1325,8 @@ pregroupPage33: [
 </div>`,
 `<div class='specialOnly'>
     <p>To summarize, you and your partner will earn points based on these rules: </p>
-    <p><b>You win: </b>if you succeed and your partner misses, you'll get 8 points.</p> 
-    <p><b>Non-win:</b> If you tie or lose to your partner, you'll get 4 points.</p>  
+    <p><b>You win: </b>if you and your partner both succeed, you'll get 11 points.</p> 
+    <p><b>Non-win: </b>if you or your partner loses, you'll get 3 points.</p>  
     <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
     <div id="shape-wrapper" style="display: flex; justify-content: center;">
@@ -1345,15 +1345,6 @@ pregroupPage33: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
-                                 style="background-color: grey; width: 100px; height: 100px;">
-                                <div id="inner-shape" class="${textNew.shape1}" 
-                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding: 10px;">
-                        <div class="outer-container">
-                            <div id="outer-shape" class="${textNew.shape1}" 
                                  style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -1364,6 +1355,15 @@ pregroupPage33: [
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -1372,7 +1372,7 @@ pregroupPage33: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
-                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                 style="background-color: grey; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -1388,10 +1388,10 @@ pregroupPage33: [
                             <span style="font-size: 12px; font-weight: bold;">(you)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
 
                 <!-- Third row: Avatar in first column, then points -->
@@ -1402,10 +1402,10 @@ pregroupPage33: [
                             <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                         </div>
                     </td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+8</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
             </table>
         </div>
@@ -1421,12 +1421,12 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round. </p>
+        <p>When you and your partner both succeed, you win:</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1440,12 +1440,12 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 8 points.</p>
+        <p>When you win, you'll get 11 points.</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1454,7 +1454,7 @@ pregroupPage332: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
+  <p>When you win, you'll see this message indicating that you earned 11 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1470,7 +1470,7 @@ pregroupPage332: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +8
+      +11
     </div>
 
     <div style="
@@ -1505,7 +1505,7 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>When you tie or lose to your partner, this is considered a non-win.</p>
+        <p>When you or your partner loses, this is considered a non-win:</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1513,7 +1513,7 @@ pregroupPage332: [
     <!-- Outcome 1 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
         </div>
       </div>
@@ -1523,7 +1523,7 @@ pregroupPage332: [
     <!-- Outcome 2 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1533,7 +1533,7 @@ pregroupPage332: [
     <!-- Outcome 3 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1549,7 +1549,7 @@ pregroupPage332: [
     </div>
 
     <div style="text-align: center;">
-        <p>A non-win will get you 4 points.</p>
+        <p>A non-win will get you 3 points.</p>
     </div>
 
   <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1557,7 +1557,7 @@ pregroupPage332: [
     <!-- Outcome 1 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
         </div>
       </div>
@@ -1567,7 +1567,7 @@ pregroupPage332: [
     <!-- Outcome 2 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1577,7 +1577,7 @@ pregroupPage332: [
     <!-- Outcome 3 -->
     <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <div class="outer-container">
-        <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+        <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
           <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
         </div>
       </div>
@@ -1588,7 +1588,7 @@ pregroupPage332: [
 </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After non-wins, you'll see this message indicating that you earned 4 points:</p>
+  <p>After non-wins, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1604,7 +1604,7 @@ pregroupPage332: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +4
+      +3
     </div>
 
     <div style="
@@ -1634,8 +1634,8 @@ pregroupPage332: [
 </div>`,
 `<div class='specialOnly'>
     <p>To summarize, you and your partner will earn points based on these rules: </p>
-    <p><b>You win: </b>if you succeed and your partner misses, you'll get 8 points.</p> 
-    <p><b>Non-win:</b> If you tie or lose to your partner, you'll get 4 points.</p>  
+    <p><b>You win: </b>if you and your partner both succeed, you'll get 11 points.</p> 
+    <p><b>Non-win: </b>if you or your partner loses, you'll get 3 points.</p>  
     <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
     <div id="shape-wrapper" style="display: flex; justify-content: center;">
@@ -1654,15 +1654,6 @@ pregroupPage332: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
-                                 style="background-color: grey; width: 100px; height: 100px;">
-                                <div id="inner-shape" class="${textNew.shape2}" 
-                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding: 10px;">
-                        <div class="outer-container">
-                            <div id="outer-shape" class="${textNew.shape2}" 
                                  style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -1673,6 +1664,15 @@ pregroupPage332: [
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -1681,7 +1681,7 @@ pregroupPage332: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
-                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                 style="background-color: grey; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -1697,10 +1697,10 @@ pregroupPage332: [
                             <span style="font-size: 12px; font-weight: bold;">(you)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
 
                 <!-- Third row: Avatar in first column, then points -->
@@ -1711,10 +1711,10 @@ pregroupPage332: [
                             <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                         </div>
                     </td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+8</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
             </table>
         </div>
@@ -1726,17 +1726,17 @@ pregroupPage332: [
 pregroupPage: [
 `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round:</p>
+        <p>When you and your partner both succeed, this is considered a double win:</p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1747,17 +1747,17 @@ pregroupPage: [
 
             `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 8 points. </p>
+        <p>After a double win, you'll get 10 points. </p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1767,7 +1767,7 @@ pregroupPage: [
             <div style="font-size: 28px;">`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
+  <p>After a double win, you'll see this message indicating that you earned 10 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1783,7 +1783,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +8
+      +10
     </div>
 
     <div style="
@@ -1814,18 +1814,18 @@ pregroupPage: [
 
   `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both succeed, this is considered a winning tie.</p>
+        <p>When you succeed and your partner misses, you win the round:</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1835,18 +1835,18 @@ pregroupPage: [
 
          `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>A winning tie will get you 6 points.</p>
+        <p>When you win, you'll get 6 points.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                     <div id="inner-shape" class="${textNew.shape1}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -1855,7 +1855,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After winning ties, you'll see this message indicating that you earned 6 points:</p>
+  <p>When you win, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1902,16 +1902,16 @@ pregroupPage: [
 
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both miss, this is considered a losing tie.</p>
+        <p>When you miss and your partner succeeds, you lose the round:</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -1921,16 +1921,16 @@ pregroupPage: [
 
               `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>A losing tie will get you 4 points.</p>
+        <p>When you lose, you will get 3 points.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -1939,7 +1939,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After losing ties, you'll see this message indicating that you earned 4 points:</p>
+  <p>After you lose, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1955,7 +1955,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +4
+      +3
     </div>
 
     <div style="
@@ -1985,16 +1985,16 @@ pregroupPage: [
 </div>`, 
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss and your partner succeeds, you lose the round. </p>
+        <p>When you and your partner both lose, this is considered a double loss: </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2004,16 +2004,16 @@ pregroupPage: [
 
                `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you lose, you'll get 2 points.</p>
+        <p>After a double loss, you'll get 1 point.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape1}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape1}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2022,7 +2022,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After losing, you'll see this message indicating that you earned 2 points:</p>
+  <p>After a double loss, you'll see this message indicating that you earned 1 point:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2038,7 +2038,7 @@ pregroupPage: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +2
+      +1
     </div>
 
     <div style="
@@ -2069,10 +2069,10 @@ pregroupPage: [
 
 `<div class='specialOnly'>
         <p>To summarize, you and your partner will earn points based on these rules: </p>
-        <p><b>You win: </b>If you succeed and your partner misses, you'll get 8 points.</p>
-        <p><b>Winning tie: </b>If both you and your partner succeed, you'll get 6 points.</p> 
-        <p><b>Losing tie: </b> If both you and your partner miss, you'll get 4 points.</p> 
-        <p><b>You lose: </b>If you miss and your partner succeeds, you'll get 2 points.</p>
+        <p><b>Double win: </b>If you and your partner both succeed, you'll get 10 points.</p>
+        <p><b>You win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
+        <p><b>You lose: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
+        <p><b>Double loss: </b>If you and your partner both miss, you'll get 1 point.</p>
   <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
 <div id="shape-wrapper" style="display: flex; justify-content: center;">
@@ -2081,10 +2081,10 @@ pregroupPage: [
             <!-- NEW ROW: Labels above shapes -->
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Winning tie</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Losing tie</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
             <!-- First row: Empty first column, Shapes start from the second column -->
@@ -2093,15 +2093,6 @@ pregroupPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape1}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2112,6 +2103,15 @@ pregroupPage: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape1}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape1}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2120,7 +2120,7 @@ pregroupPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2136,10 +2136,10 @@ pregroupPage: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+8</b></td>
+                <td><b>+10</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+2</b></td>
+                <td><b>+3</b></td>
+                <td><b>+1</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -2150,10 +2150,10 @@ pregroupPage: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+10</b></td>
+                <td><b>+3</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+8</b></td>
+                <td><b>+1</b></td>
             </tr>
         </table>
     </div>
@@ -2170,10 +2170,10 @@ groupPage: [
             <!-- NEW ROW: Labels above shapes -->
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Winning tie</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Losing tie</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
             <!-- First row: Empty first column, Shapes start from the second column -->
@@ -2182,15 +2182,6 @@ groupPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape1}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2201,6 +2192,15 @@ groupPage: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape1}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape1}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2209,7 +2209,7 @@ groupPage: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape1}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2225,10 +2225,10 @@ groupPage: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+8</b></td>
+                <td><b>+10</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+2</b></td>
+                <td><b>+3</b></td>
+                <td><b>+1</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -2239,10 +2239,10 @@ groupPage: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+10</b></td>
+                <td><b>+3</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+8</b></td>
+                <td><b>+1</b></td>
             </tr>
         </table>
     </div>
@@ -2252,47 +2252,50 @@ groupPage: [
 </div>`
 ],
 pregroupPage2: [
- `<div class='parent'>
-    <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
-    </div>
-
-    <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round.</p>
-    </div>
-    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
-        <!-- Outcome 1 -->
-        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
-                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
-                </div>
-            </div>
-            <b><p style="margin-top: 10px;"></p></b>
-            </div>
-        </div>`,
-
 `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 8 points.</p>
+        <p>When you and your partner both succeed, this is considered a double win:</p>
     </div>
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
             <b><p style="margin-top: 10px;"></p></b>
+            </div>                
             </div>
-        </div>`,
+            <div style="font-size: 28px;">`,
+
+            `<div class='parent'>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double win</h2></u>
+    </div>
+
+    <div style="text-align: center;">
+        <p>After a double win, you'll get 10 points. </p>
+    </div>
+    <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
+        <!-- Outcome 1 -->
+        <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="outer-container">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
+                </div>
+            </div>
+            <b><p style="margin-top: 10px;"></p></b>
+            </div>                
+            </div>
+            <div style="font-size: 28px;">`,
+
 `<div class="parent" style="text-align: center;">
-  <p>After winning, you'll see this message indicating that you earned 8 points:</p>
+  <p>After a double win, you'll see this message indicating that you earned 10 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2308,7 +2311,7 @@ pregroupPage2: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +8
+      +10
     </div>
 
     <div style="
@@ -2339,18 +2342,18 @@ pregroupPage2: [
 
   `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both succeed, this is considered a winning tie.</p>
+        <p>When you succeed and your partner misses, you win the round:</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -2358,20 +2361,20 @@ pregroupPage2: [
             </div>
         </div>`,
 
-        `<div class='parent'>
+         `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Winning tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>A winning tie will get you 6 points.</p>
+        <p>When you win, you'll get 6 points.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="outer-container">
-                <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                     <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                 </div>
             </div>
@@ -2380,7 +2383,7 @@ pregroupPage2: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After winning ties, you'll see this message indicating that you earned 6 points:</p>
+  <p>When you win, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2425,20 +2428,18 @@ pregroupPage2: [
   </div>
 </div>`,
 
-
-
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both miss, this is considered a losing tie.</p>
+        <p>When you miss and your partner succeeds, you lose the round:</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2446,18 +2447,18 @@ pregroupPage2: [
                 </div>
             </div>`,
 
-            `<div class='parent'>
+              `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Losing tie</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>A losing tie will get you 4 points.</p>
+        <p>When you lose, you will get 3 points.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2466,7 +2467,7 @@ pregroupPage2: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After losing ties, you'll see this message indicating that you earned 4 points:</p>
+  <p>After you lose, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2482,7 +2483,7 @@ pregroupPage2: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +4
+      +3
     </div>
 
     <div style="
@@ -2512,16 +2513,16 @@ pregroupPage2: [
 </div>`, 
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss and your partner succeeds, you lose the round. </p>
+        <p>When you and your partner both lose, this is considered a double loss: </p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2529,18 +2530,18 @@ pregroupPage2: [
                 </div>
             </div>`,
 
-            `<div class='parent'>
+               `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Double loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you lose, you'll get 2 points.</p>
+        <p>After a double loss, you'll get 1 point.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -2549,7 +2550,7 @@ pregroupPage2: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After losing, you'll see this message indicating that you earned 2 points:</p>
+  <p>After a double loss, you'll see this message indicating that you earned 1 point:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2565,7 +2566,7 @@ pregroupPage2: [
       justify-content: center;
       margin-bottom: 50px;
     ">
-      +2
+      +1
     </div>
 
     <div style="
@@ -2593,12 +2594,13 @@ pregroupPage2: [
     Get ready for the next round!
   </div>
 </div>`,
+
 `<div class='specialOnly'>
         <p>To summarize, you and your partner will earn points based on these rules: </p>
-        <p><b>You win: </b>If you succeed and your partner misses, you'll get 8 points.</p>
-        <p><b>Winning tie: </b>If both you and your partner succeed, you'll get 6 points.</p> 
-        <p><b>Losing tie: </b> If both you and your partner miss, you'll get 4 points.</p> 
-        <p><b>You lose: </b>If you miss and your partner succeeds, you'll get 2 points.</p>
+        <p><b>Double win: </b>If you and your partner both succeed, you'll get 10 points.</p>
+        <p><b>You win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
+        <p><b>You lose: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
+        <p><b>Double loss: </b>If you and your partner both miss, you'll get 1 point.</p>
   <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
 <div id="shape-wrapper" style="display: flex; justify-content: center;">
@@ -2607,10 +2609,10 @@ pregroupPage2: [
             <!-- NEW ROW: Labels above shapes -->
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Winning tie</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Losing tie</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
             <!-- First row: Empty first column, Shapes start from the second column -->
@@ -2619,15 +2621,6 @@ pregroupPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape2}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2638,6 +2631,15 @@ pregroupPage2: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape2}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape2}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2646,7 +2648,7 @@ pregroupPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2662,10 +2664,10 @@ pregroupPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+8</b></td>
+                <td><b>+10</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+2</b></td>
+                <td><b>+3</b></td>
+                <td><b>+1</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -2676,10 +2678,10 @@ pregroupPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+10</b></td>
+                <td><b>+3</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+8</b></td>
+                <td><b>+1</b></td>
             </tr>
         </table>
     </div>
@@ -2705,15 +2707,6 @@ groupPage33: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
-                                 style="background-color: grey; width: 100px; height: 100px;">
-                                <div id="inner-shape" class="${textNew.shape1}" 
-                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding: 10px;">
-                        <div class="outer-container">
-                            <div id="outer-shape" class="${textNew.shape1}" 
                                  style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2724,6 +2717,15 @@ groupPage33: [
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
                                  style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape1}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape1}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -2732,7 +2734,7 @@ groupPage33: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape1}" 
-                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                 style="background-color: grey; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape1}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -2748,10 +2750,10 @@ groupPage33: [
                             <span style="font-size: 12px; font-weight: bold;">(you)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
 
                 <!-- Third row: Avatar in first column, then points -->
@@ -2762,10 +2764,10 @@ groupPage33: [
                             <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                         </div>
                     </td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+8</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
             </table>
         </div>
@@ -2792,15 +2794,6 @@ groupPage332: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
-                                 style="background-color: grey; width: 100px; height: 100px;">
-                                <div id="inner-shape" class="${textNew.shape2}" 
-                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding: 10px;">
-                        <div class="outer-container">
-                            <div id="outer-shape" class="${textNew.shape2}" 
                                  style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2811,6 +2804,15 @@ groupPage332: [
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 100px; height: 100px;">
+                                <div id="inner-shape" class="${textNew.shape2}" 
+                                     style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding: 10px;">
+                        <div class="outer-container">
+                            <div id="outer-shape" class="${textNew.shape2}" 
+                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -2819,7 +2821,7 @@ groupPage332: [
                     <td style="padding: 10px;">
                         <div class="outer-container">
                             <div id="outer-shape" class="${textNew.shape2}" 
-                                 style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                                 style="background-color: grey; width: 100px; height: 100px;">
                                 <div id="inner-shape" class="${textNew.shape2}" 
                                      style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                             </div>
@@ -2835,10 +2837,10 @@ groupPage332: [
                             <span style="font-size: 12px; font-weight: bold;">(you)</span>
                         </div>
                     </td>
-                    <td><b>+8</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
 
                 <!-- Third row: Avatar in first column, then points -->
@@ -2849,10 +2851,10 @@ groupPage332: [
                             <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                         </div>
                     </td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+4</b></td>
-                    <td><b>+8</b></td>
+                    <td><b>+11</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
+                    <td><b>+3</b></td>
                 </tr>
             </table>
         </div>
@@ -2869,10 +2871,10 @@ groupPage2: [
             <!-- NEW ROW: Labels above shapes -->
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Winning tie</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Losing tie</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
             <!-- First row: Empty first column, Shapes start from the second column -->
@@ -2881,15 +2883,6 @@ groupPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: grey; width: 100px; height: 100px;">
-                            <div id="inner-shape" class="${textNew.shape2}" 
-                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
-                        </div>
-                    </div>
-                </td>
-                <td style="padding: 10px;">
-                    <div class="outer-container">
-                        <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
@@ -2900,6 +2893,15 @@ groupPage2: [
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
                              style="background-color: grey; width: 100px; height: 100px;">
+                            <div id="inner-shape" class="${textNew.shape2}" 
+                                 style="background-color: {{avatarResponse}}; width: 66px; height: 66px; margin: auto;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div class="outer-container">
+                        <div id="outer-shape" class="${textNew.shape2}" 
+                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2908,7 +2910,7 @@ groupPage2: [
                 <td style="padding: 10px;">
                     <div class="outer-container">
                         <div id="outer-shape" class="${textNew.shape2}" 
-                             style="background-color: ${textNew.color}; width: 100px; height: 100px;">
+                             style="background-color: grey; width: 100px; height: 100px;">
                             <div id="inner-shape" class="${textNew.shape2}" 
                                  style="background-color: grey; width: 66px; height: 66px; margin: auto;"></div>
                         </div>
@@ -2924,10 +2926,10 @@ groupPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(you)</span>
                     </div>
                 </td>
-                <td><b>+8</b></td>
+                <td><b>+10</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+2</b></td>
+                <td><b>+3</b></td>
+                <td><b>+1</b></td>
             </tr>
 
             <!-- Third row: Points with avatar 4 -->
@@ -2938,10 +2940,10 @@ groupPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+10</b></td>
+                <td><b>+3</b></td>
                 <td><b>+6</b></td>
-                <td><b>+4</b></td>
-                <td><b>+8</b></td>
+                <td><b>+1</b></td>
             </tr>
         </table>
     </div>
@@ -3036,7 +3038,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                      <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -3045,7 +3047,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -3054,7 +3056,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -3063,7 +3065,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -3156,7 +3158,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                      <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -3165,7 +3167,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;",>
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: {{avatarResponse}};"></div>
                     </div>
                 </div>
@@ -3174,7 +3176,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -3183,7 +3185,7 @@ groupPage2: [
 
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="outer-container">
-                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: ${textNew.color};">
+                    <div id="outer-shape" class="${textNew.shape2}" style="background-color: grey;">
                         <div id="inner-shape" class="${textNew.shape2}" style="background-color: grey;"></div>
                     </div>
                 </div>
@@ -3204,31 +3206,35 @@ function MakeLoop(group, round) {
 function getCorrectAnswers(randomAssignment) {
     let isSecondTime = jsPsych.data.get().last(1).values()[0].isSecondTime;
     return {
+        attnChk0: !isSecondTime
+  ? ([1, 3, 5, 7].includes(randomAssignment)
+      ? `My earnings depend on my performance only.`
+      : `My earnings depend on both my performance and my partner's performance.`)
+  : ([1, 3, 5, 7].includes(randomAssignment)
+      ? `My earnings depend on both my performance and my partner's performance.`
+      : `My earnings depend on my performance only.`),
+
 attnChk1: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+7` : 
-     ([2, 6].includes(randomAssignment) ? `+4` : `+6`))
-  : ([1, 5].includes(randomAssignment) ? `+4` : 
-     ([3, 7].includes(randomAssignment) ? `+6` : `+7`)),
+? ([1, 3, 5, 7].includes(randomAssignment) ? `+8`
+: ([2, 6].includes(randomAssignment) ? `+11` : `+10`))
+: ([1, 5].includes(randomAssignment) ? `+11`
+: ([3, 7].includes(randomAssignment) ? `+10` : `+8`)),
 
 attnChk2: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment)
-      ? `+7`
-      : ([2, 6].includes(randomAssignment) ? `+8` : `+8`)
-    )
-  : ([1, 3, 5, 7].includes(randomAssignment)
-      ? ([1, 5].includes(randomAssignment) ? `+8` : `+8`)
-      : `+7`
-    ),
+? ([1, 3, 5, 7].includes(randomAssignment) ? `+8`
+: ([2, 6].includes(randomAssignment) ? `+3` : `+6`))
+: ([1, 5].includes(randomAssignment) ? `+3`
+: ([3, 7].includes(randomAssignment) ? `+6` : `+8`)),
 
 attnChk3: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+3` : 
-     ([2, 6].includes(randomAssignment) ? `+4` : `+2`))
-  : ([1, 5].includes(randomAssignment) ? `+4` : 
-     ([3, 7].includes(randomAssignment) ? `+2` : `+3`)),
+? ([1, 3, 5, 7].includes(randomAssignment) ? `+2` : `+3`)
+: ([2, 4, 6, 8].includes(randomAssignment) ? `+2` : `+3`),
 
 attnChk4: !isSecondTime
-  ? ([1, 3, 5, 7].includes(randomAssignment) ? `+3` : `+4`)
-  : ([1, 3, 5, 7].includes(randomAssignment) ? `+4` : `+3`),
+? ([1, 3, 5, 7].includes(randomAssignment) ? `+2`
+: ([2, 6].includes(randomAssignment) ? `+3` : `+1`))
+: ([1, 5].includes(randomAssignment) ? `+3`
+: ([3, 7].includes(randomAssignment) ? `+1` : `+2`)),
     };
 }
 
@@ -3298,24 +3304,24 @@ let attnChkDiv =
             options: [`My earnings depend on my performance only.`,`My earnings depend on both my performance and my partner's performance.`],
         },
         {
-            prompt: `How many points do you get when you succeed but your partner misses?`, 
-            name: `attnChk2`, 
-            options: ['+2', '+3', '+4', '+6', '+7','+8'],
-        },
-        {
             prompt: `How many points do you get when both you and your partner succeed?`,
             name: `attnChk1`, 
-            options: ['+2', '+3', '+4', '+6', '+7','+8'],
+            options: ['+1', '+2', '+3', '+6', '+8','+10', '+11'],
+        },
+        {
+            prompt: `How many points do you get when you succeed but your partner misses?`, 
+            name: `attnChk2`, 
+            options: ['+1', '+2', '+3', '+6', '+8','+10','+11'],
+        },
+        {
+            prompt: `How many points do you get when you miss but your partner succeeds?`, 
+            name: `attnChk3`, 
+            options: ['+1', '+2', '+3', '+6', '+8','+10', '+11'],
         },
         {
             prompt: `How many points do you get when both you and your partner miss?`, 
             name: `attnChk4`, 
-            options: ['+2', '+3', '+4', '+6', '+7','+8'],
-        },
-                {
-            prompt: `How many points do you get when you miss but your partner succeeds?`, 
-            name: `attnChk3`, 
-            options: ['+2', '+3', '+4', '+6', '+7','+8'],
+            options: ['+1', '+2', '+3', '+6', '+8','+10', '+11'],
         },
     ];
 },
@@ -4015,45 +4021,45 @@ function MakeFeedback(mode) {
 
             if (mode === 'groupHigh') {
                 if (lastTrialData.outcome && partner_outcome === 0) {
+                    pointsAddedAvatar1 = 6;
+                    pointsAddedAvatar2 = 3;
+                } else if (lastTrialData.outcome && partner_outcome === 1) {
+                    pointsAddedAvatar1 = 10;
+                    pointsAddedAvatar2 = 10;
+                } else if (!lastTrialData.outcome && partner_outcome === 0) {
+                    pointsAddedAvatar1 = 1;
+                    pointsAddedAvatar2 = 1;
+                } else if (!lastTrialData.outcome && partner_outcome === 1) { 
+                    pointsAddedAvatar1 = 3;
+                    pointsAddedAvatar2 = 6;
+                }
+            } else if (mode === 'ind') {
+                if (lastTrialData.outcome && partner_outcome === 0) {
                     pointsAddedAvatar1 = 8;
                     pointsAddedAvatar2 = 2;
                 } else if (lastTrialData.outcome && partner_outcome === 1) {
-                    pointsAddedAvatar1 = 6;
-                    pointsAddedAvatar2 = 6;
+                    pointsAddedAvatar1 = 8;
+                    pointsAddedAvatar2 = 8;
                 } else if (!lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 4;
-                    pointsAddedAvatar2 = 4;
+                    pointsAddedAvatar1 = 2;
+                    pointsAddedAvatar2 = 2;
                 } else if (!lastTrialData.outcome && partner_outcome === 1) { 
                     pointsAddedAvatar1 = 2;
                     pointsAddedAvatar2 = 8;
                 }
-            } else if (mode === 'ind') {
-                if (lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 7;
-                    pointsAddedAvatar2 = 3;
-                } else if (lastTrialData.outcome && partner_outcome === 1) {
-                    pointsAddedAvatar1 = 7;
-                    pointsAddedAvatar2 = 7;
-                } else if (!lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 3;
-                    pointsAddedAvatar2 = 3;
-                } else if (!lastTrialData.outcome && partner_outcome === 1) { 
-                    pointsAddedAvatar1 = 3;
-                    pointsAddedAvatar2 = 7;
-                }
             } else if (mode === 'groupLow') {
                 if (lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 8;
-                    pointsAddedAvatar2 = 4;
+                    pointsAddedAvatar1 = 3;
+                    pointsAddedAvatar2 = 3;
                 } else if (lastTrialData.outcome && partner_outcome === 1) {
-                    pointsAddedAvatar1 = 4;
-                    pointsAddedAvatar2 = 4;
+                    pointsAddedAvatar1 = 11;
+                    pointsAddedAvatar2 = 11;
                 } else if (!lastTrialData.outcome && partner_outcome === 0) {
-                    pointsAddedAvatar1 = 4;
-                    pointsAddedAvatar2 = 4;
+                    pointsAddedAvatar1 = 3;
+                    pointsAddedAvatar2 = 3;
                 } else if (!lastTrialData.outcome && partner_outcome === 1) { 
-                    pointsAddedAvatar1 = 4;
-                    pointsAddedAvatar2 = 8;
+                    pointsAddedAvatar1 = 3;
+                    pointsAddedAvatar2 = 3;
                 }
             }
 
