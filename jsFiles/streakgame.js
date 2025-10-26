@@ -2,8 +2,6 @@
 
 const randomAssignment = Math.floor(Math.random() * 8) + 1; 
 
-//randomAssignment = 4;
-
 console.log(randomAssignment);
 
 /* 
@@ -14,10 +12,10 @@ NEW
 2 = IntSquareLow + IndCircle CHECKED v2
 
 3 = IndCircle + IntSquareHigh CHECKED v2
-4 = IntSquareHigh + IndCircle CHECKED
+4 = IntSquareHigh + IndCircle CHECKED v2
 
 5 = IndSquare + IntCircleLow CHECKED
-6 = IntCircleLow + IndSquare CHECKED
+6 = IntCircleLow + IndSquare CHECKED v2
 
 7 = IndSquare + IntCircleHigh CHECKED
 8 = IntCircleHigh + IndSquare CHECKED
@@ -678,10 +676,10 @@ presoloPage: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+8</b></td>
                 <td><b>+2</b></td>
                 <td><b>+8</b></td>
-                <td><b>+8</b></td>
+                <td><b>+2</b></td>
             </tr>
         </table>
     </div>
@@ -766,10 +764,10 @@ soloPage: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+8</b></td>
                 <td><b>+2</b></td>
                 <td><b>+8</b></td>
-                <td><b>+8</b></td>
+                <td><b>+2</b></td>
             </tr>
         </table>
     </div>
@@ -1006,10 +1004,10 @@ presoloPage2: [`<div class='parent'>
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+8</b></td>
                 <td><b>+2</b></td>
                 <td><b>+8</b></td>
-                <td><b>+8</b></td>
+                <td><b>+2</b></td>
             </tr>
         </table>
     </div>
@@ -1093,10 +1091,10 @@ soloPage2: [
                         <span style="font-size: 12px; font-weight: bold;">(your partner)</span>
                     </div>
                 </td>
-                <td><b>+2</b></td>
+                <td><b>+8</b></td>
                 <td><b>+2</b></td>
                 <td><b>+8</b></td>
-                <td><b>+8</b></td>
+                <td><b>+2</b></td>
             </tr>
         </table>
     </div>
@@ -1108,11 +1106,11 @@ soloPage2: [
 pregroupPage33: [ 
 `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both succeed, you win:</p>
+        <p>When you and your partner both succeed, this is considered a win:</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1127,11 +1125,11 @@ pregroupPage33: [
 
         `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 11 points.</p>
+        <p>A win will get you 11 points.</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1145,7 +1143,7 @@ pregroupPage33: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>When you win, you'll see this message indicating that you earned 11 points:</p>
+  <p>After wins, you'll see this message indicating that you earned 11 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1325,7 +1323,7 @@ pregroupPage33: [
 </div>`,
 `<div class='specialOnly'>
     <p>To summarize, you and your partner will earn points based on these rules: </p>
-    <p><b>You win: </b>if you and your partner both succeed, you'll get 11 points.</p> 
+    <p><b>Win: </b>if you and your partner both succeed, you'll get 11 points.</p> 
     <p><b>Non-win: </b>if you or your partner loses, you'll get 3 points.</p>  
     <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
@@ -1335,7 +1333,7 @@ pregroupPage33: [
                 <!-- NEW ROW: Labels above shapes -->
                 <tr>
                     <td style="padding: 10px;"></td> <!-- Empty first column -->
-                    <td colspan="1" style="padding: 10px; font-size: 20px; font-weight: bold; border-top: 1px solid #333; border-left: 1px solid #333; border-right: 1px solid #333;">You win</td>
+                    <td colspan="1" style="padding: 10px; font-size: 20px; font-weight: bold; border-top: 1px solid #333; border-left: 1px solid #333; border-right: 1px solid #333;">Win</td>
                    <td colspan="3" style="padding: 10px; font-size: 20px; font-weight: bold; border-top: 1px solid #333; border-left: 1px solid #333; border-right: 1px solid #333;">Non-win</td>
                 </tr>
                 
@@ -1417,11 +1415,11 @@ pregroupPage33: [
 pregroupPage332: [ 
 `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you and your partner both succeed, you win:</p>
+        <p>When you and your partner both succeed, this is considered a win:</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1436,11 +1434,11 @@ pregroupPage332: [
 
         `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 11 points.</p>
+        <p>A win will get you 11 points.</p>
     </div>
         <!-- Outcome 1 -->
         <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1454,7 +1452,7 @@ pregroupPage332: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>When you win, you'll see this message indicating that you earned 11 points:</p>
+  <p>After wins, you'll see this message indicating that you earned 11 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1814,11 +1812,11 @@ pregroupPage: [
 
   `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round:</p>
+        <p>When you succeed and your partner misses, this is considered a solo win:</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1835,11 +1833,11 @@ pregroupPage: [
 
          `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 6 points.</p>
+        <p>After a solo win, you'll get 6 points.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -1855,7 +1853,7 @@ pregroupPage: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>When you win, you'll see this message indicating that you earned 6 points:</p>
+  <p>After a solo win, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -1902,11 +1900,11 @@ pregroupPage: [
 
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss and your partner succeeds, you lose the round:</p>
+        <p>When you miss and your partner succeeds, this is considered a solo loss:</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1921,11 +1919,11 @@ pregroupPage: [
 
               `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you lose, you will get 3 points.</p>
+        <p>After a solo loss, you'll get 3 points.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1939,7 +1937,7 @@ pregroupPage: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After you lose, you'll see this message indicating that you earned 3 points:</p>
+  <p>After a solo loss, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2070,8 +2068,8 @@ pregroupPage: [
 `<div class='specialOnly'>
         <p>To summarize, you and your partner will earn points based on these rules: </p>
         <p><b>Double win: </b>If you and your partner both succeed, you'll get 10 points.</p>
-        <p><b>You win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
-        <p><b>You lose: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
+        <p><b>Solo win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
+        <p><b>Solo loss: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
         <p><b>Double loss: </b>If you and your partner both miss, you'll get 1 point.</p>
   <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
@@ -2082,8 +2080,8 @@ pregroupPage: [
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo win</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo loss</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
@@ -2171,8 +2169,8 @@ groupPage: [
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo win</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo loss</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
@@ -2342,11 +2340,11 @@ pregroupPage2: [
 
   `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you succeed and your partner misses, you win the round:</p>
+        <p>When you succeed and your partner misses, this is considered a solo win:</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -2363,11 +2361,11 @@ pregroupPage2: [
 
          `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You win</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo win</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you win, you'll get 6 points.</p>
+        <p>After a solo win, you'll get 6 points.</p>
     </div>
 
     <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
@@ -2383,7 +2381,7 @@ pregroupPage2: [
         </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>When you win, you'll see this message indicating that you earned 6 points:</p>
+  <p>After a solo win, you'll see this message indicating that you earned 6 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2430,11 +2428,11 @@ pregroupPage2: [
 
                  `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you miss and your partner succeeds, you lose the round:</p>
+        <p>When you miss and your partner succeeds, this is considered a solo loss:</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -2449,11 +2447,11 @@ pregroupPage2: [
 
               `<div class='parent'>
     <div style="text-align: center; margin-bottom: 20px;">
-        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">You lose</h2></u>
+        <u><h2 style="font-size: 28px; font-weight: bold; margin: 0;">Solo loss</h2></u>
     </div>
 
     <div style="text-align: center;">
-        <p>When you lose, you will get 3 points.</p>
+        <p>After a solo loss, you'll get 3 points.</p>
     </div>
                 <div id="shape-wrapper" style="display: flex; gap: 40px; justify-content: center; align-items: center; margin-bottom: 50px;">
             <div class="game-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -2467,7 +2465,7 @@ pregroupPage2: [
             </div>`,
 
 `<div class="parent" style="text-align: center;">
-  <p>After you lose, you'll see this message indicating that you earned 3 points:</p>
+  <p>After a solo loss, you'll see this message indicating that you earned 3 points:</p>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <div style="
@@ -2598,8 +2596,8 @@ pregroupPage2: [
 `<div class='specialOnly'>
         <p>To summarize, you and your partner will earn points based on these rules: </p>
         <p><b>Double win: </b>If you and your partner both succeed, you'll get 10 points.</p>
-        <p><b>You win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
-        <p><b>You lose: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
+        <p><b>Solo win: </b>If you succeed and your partner miss, you'll get 6 points.</p> 
+        <p><b>Solo loss: </b> If you miss and your partner succeed, you'll get 3 points.</p> 
         <p><b>Double loss: </b>If you and your partner both miss, you'll get 1 point.</p>
   <p>Your outcome depends on you and your partner's performance. Remember: Every 5 points is worth 1 cent.</p>
 
@@ -2610,8 +2608,8 @@ pregroupPage2: [
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo win</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo loss</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
@@ -2872,8 +2870,8 @@ groupPage2: [
             <tr>
                 <td style="padding: 10px;"></td> <!-- Empty first column -->
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You win</td>
-                <td style="padding: 10px; font-size: 15px; font-weight: bold;">You lose</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo win</td>
+                <td style="padding: 10px; font-size: 15px; font-weight: bold;">Solo loss</td>
                 <td style="padding: 10px; font-size: 15px; font-weight: bold;">Double loss</td>
             </tr>
             
@@ -4824,7 +4822,7 @@ const html = {
     p.save_data = {
         type: jsPsychPipe,
         action: "save",
-        experiment_id: "3cPL9p5wK0zH",
+        experiment_id: "ZNtN6BCZxbMU",
         filename: filename,
         data_string: ()=>jsPsych.data.get().csv()
     }; 
